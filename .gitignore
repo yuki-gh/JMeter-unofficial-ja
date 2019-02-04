@@ -1,3 +1,5 @@
 jmeter.log
 org
 ErrorLog_*.txt
+*~
+#*#
