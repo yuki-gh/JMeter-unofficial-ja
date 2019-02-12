@@ -1,0 +1,2 @@
+org/apache/jmeter/protocol/java/sampler/BSFSamplerResources.properties
+org/apache/jmeter/protocol/java/sampler/JSR223SamplerResources.properties
