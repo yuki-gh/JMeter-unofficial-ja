@@ -1,2 +1,2 @@
-org/apache/jmeter/protocol/mongodb/config/MongoSourceElementResources.properties
-org/apache/jmeter/protocol/mongodb/sampler/MongoScriptSamplerResources.properties
+org/apache/jmeter/protocol/mongodb/config,MongoSourceElementResources
+org/apache/jmeter/protocol/mongodb/sampler,MongoScriptSamplerResources

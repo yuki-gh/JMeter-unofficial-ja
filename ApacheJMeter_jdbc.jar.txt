@@ -1,4 +1,4 @@
-org/apache/jmeter/protocol/jdbc/config/DataSourceElementResources.properties
-org/apache/jmeter/protocol/jdbc/processor/JDBCPostProcessorResources.properties
-org/apache/jmeter/protocol/jdbc/processor/JDBCPreProcessorResources.properties
-org/apache/jmeter/protocol/jdbc/sampler/JDBCSamplerResources.properties
+org/apache/jmeter/protocol/jdbc/config,DataSourceElementResources
+org/apache/jmeter/protocol/jdbc/processor,JDBCPostProcessorResources
+org/apache/jmeter/protocol/jdbc/processor,JDBCPreProcessorResources
+org/apache/jmeter/protocol/jdbc/sampler,JDBCSamplerResources

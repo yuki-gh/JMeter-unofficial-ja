@@ -10,8 +10,8 @@ do
 		path=$1
 		file=$2_ja.properties
 		mkdir -p $1
-		native2ascii -encoding utf8 ja/$file $1/$file
-		#echo zip -u ${f%.txt} $1/$file
+		native2ascii -encoding utf8 ja/$file $path/$file
+		#echo zip -u $JMETER_HOME/lib/ext/${f%.txt} $path/$file
 	done
 	zip -u -r $JMETER_HOME/lib/ext/${f%.txt} org
 done
