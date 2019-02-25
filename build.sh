@@ -1,5 +1,5 @@
 #! /usr/bin/bash
-JMETER_HOME=C:/Server/apache-jmeter-5.0
+JMETER_HOME=C:/Server/apache-jmeter
 IFS=,
 for f in *.jar.txt
 do
