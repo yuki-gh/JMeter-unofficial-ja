@@ -762,7 +762,6 @@
             <collectionProp name="DNSCacheManager.servers"/>
             <boolProp name="DNSCacheManager.clearEachIteration">false</boolProp>
             <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
-            <collectionProp name="DNSCacheManager.hosts"/>
           </DNSCacheManager>
           <hashTree/>
         </hashTree>
@@ -1428,6 +1427,51 @@
             </elementProp>
           </JMSSampler>
           <hashTree/>
+          <AccessLogSampler guiclass="TestBeanGUI" testclass="AccessLogSampler" testname="アクセスログサンプラー" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="domain"></stringProp>
+            <boolProp name="imageParsing">false</boolProp>
+            <stringProp name="logFile"></stringProp>
+            <stringProp name="parserClassName">org.apache.jmeter.protocol.http.util.accesslog.TCLogParser</stringProp>
+            <stringProp name="portString"></stringProp>
+          </AccessLogSampler>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同期タイマー" enabled="true">
+            <intProp name="groupSize">0</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <CompareAssertion guiclass="TestBeanGUI" testclass="CompareAssertion" testname="比較アサーション" enabled="true">
+            <boolProp name="compareContent">true</boolProp>
+            <longProp name="compareTime">-1</longProp>
+            <collectionProp name="stringsToSkip"/>
+          </CompareAssertion>
+          <hashTree/>
+          <KeystoreConfig guiclass="TestBeanGUI" testclass="KeystoreConfig" testname="キーストア構成" enabled="true">
+            <stringProp name="preload">True</stringProp>
+            <stringProp name="clientCertAliasVarName"></stringProp>
+            <stringProp name="startIndex"></stringProp>
+            <stringProp name="endIndex"></stringProp>
+          </KeystoreConfig>
+          <hashTree/>
+          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="乱数変数" enabled="true">
+            <stringProp name="variableName"></stringProp>
+            <stringProp name="outputFormat"></stringProp>
+            <stringProp name="minimumValue">1</stringProp>
+            <stringProp name="maximumValue"></stringProp>
+            <stringProp name="randomSeed"></stringProp>
+            <boolProp name="perThread">false</boolProp>
+          </RandomVariableConfig>
+          <hashTree/>
+          <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="デバッグ後処理" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySamplerProperties">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugPostProcessor>
+          <hashTree/>
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="未翻訳" enabled="true">
@@ -1454,35 +1498,6 @@
             <stringProp name="html_assertion_filename"></stringProp>
           </HTMLAssertion>
           <hashTree/>
-          <AccessLogSampler guiclass="TestBeanGUI" testclass="AccessLogSampler" testname="アクセスログサンプラー" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="domain"></stringProp>
-            <boolProp name="imageParsing">false</boolProp>
-            <stringProp name="logFile"></stringProp>
-            <stringProp name="parserClassName">org.apache.jmeter.protocol.http.util.accesslog.TCLogParser</stringProp>
-            <stringProp name="portString"></stringProp>
-          </AccessLogSampler>
-          <hashTree/>
-          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同期タイマー" enabled="true">
-            <intProp name="groupSize">0</intProp>
-            <longProp name="timeoutInMs">0</longProp>
-          </SyncTimer>
-          <hashTree/>
-          <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="デバッグ後処理" enabled="true">
-            <boolProp name="displayJMeterProperties">false</boolProp>
-            <boolProp name="displayJMeterVariables">true</boolProp>
-            <boolProp name="displaySamplerProperties">true</boolProp>
-            <boolProp name="displaySystemProperties">false</boolProp>
-          </DebugPostProcessor>
-          <hashTree/>
-          <CompareAssertion guiclass="TestBeanGUI" testclass="CompareAssertion" testname="比較アサーション" enabled="true">
-            <boolProp name="compareContent">true</boolProp>
-            <longProp name="compareTime">-1</longProp>
-            <collectionProp name="stringsToSkip"/>
-          </CompareAssertion>
-          <hashTree/>
           <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="高精度スループットタイマー" enabled="true">
             <doubleProp>
               <name>allowedThroughputSurplus</name>
@@ -1501,22 +1516,6 @@
             </doubleProp>
             <intProp name="throughputPeriod">3600</intProp>
           </PreciseThroughputTimer>
-          <hashTree/>
-          <KeystoreConfig guiclass="TestBeanGUI" testclass="KeystoreConfig" testname="キーストア構成" enabled="true">
-            <stringProp name="preload">True</stringProp>
-            <stringProp name="clientCertAliasVarName"></stringProp>
-            <stringProp name="startIndex"></stringProp>
-            <stringProp name="endIndex"></stringProp>
-          </KeystoreConfig>
-          <hashTree/>
-          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="ランダム変数" enabled="true">
-            <stringProp name="variableName"></stringProp>
-            <stringProp name="outputFormat"></stringProp>
-            <stringProp name="minimumValue">1</stringProp>
-            <stringProp name="maximumValue"></stringProp>
-            <stringProp name="randomSeed"></stringProp>
-            <boolProp name="perThread">false</boolProp>
-          </RandomVariableConfig>
           <hashTree/>
         </hashTree>
       </hashTree>
