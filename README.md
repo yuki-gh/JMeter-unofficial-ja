@@ -20,11 +20,12 @@ Apache JMeterのUIを日本語化します。
 - Windows 7 Pro x64 SP1 日本語版
 - Windows 10 Home x64 1809 日本語版
 
-## インストール
+## インストール(Windows)
+
+zipと、JDK(≦1.8)のnative2asciiが必要です。
 
 build.shのJMETER_HOMEを書き換えて実行します。
 必要に応じて管理者権限で実行します。
-zipと、JDK(≦1.8)のnative2asciiが必要です。
 .jarファイルを書き換えるので注意してください。
 
 日本語で起動するには、bin\setenv.batに以下のように書きます。
