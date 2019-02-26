@@ -102,26 +102,6 @@
             <stringProp name="ConfigTestElement.password"></stringProp>
           </FTPSampler>
           <hashTree/>
-          <JMSSampler guiclass="JMSSamplerGui" testclass="JMSSampler" testname="JMS Point-to-Point" enabled="true">
-            <stringProp name="JMSSampler.queueconnectionfactory"></stringProp>
-            <stringProp name="JMSSampler.SendQueue"></stringProp>
-            <stringProp name="JMSSampler.ReceiveQueue"></stringProp>
-            <intProp name="JMSSampler.communicationStyle">0</intProp>
-            <boolProp name="JMSSampler.isNonPersistent">false</boolProp>
-            <boolProp name="JMSSampler.useReqMsgIdAsCorrelId">false</boolProp>
-            <stringProp name="JMSSampler.timeout"></stringProp>
-            <stringProp name="JMSSampler.jmsNumberOfSamplesToAggregate"></stringProp>
-            <stringProp name="HTTPSamper.xml_data"></stringProp>
-            <stringProp name="JMSSampler.initialContextFactory"></stringProp>
-            <stringProp name="JMSSampler.contextProviderUrl"></stringProp>
-            <elementProp name="JMSSampler.jndiProperties" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <elementProp name="arguments" elementType="JMSProperties">
-              <collectionProp name="JMSProperties.properties"/>
-            </elementProp>
-          </JMSSampler>
-          <hashTree/>
           <SubscriberSampler guiclass="JMSSubscriberGui" testclass="SubscriberSampler" testname="JMSサブスクライバー" enabled="true">
             <stringProp name="jms.jndi_properties">false</stringProp>
             <stringProp name="jms.initial_context_factory"></stringProp>
@@ -1426,6 +1406,26 @@
             <intProp name="ActionProcessor.target">0</intProp>
             <stringProp name="ActionProcessor.duration">0</stringProp>
           </TestAction>
+          <hashTree/>
+          <JMSSampler guiclass="JMSSamplerGui" testclass="JMSSampler" testname="JMS Point-to-Point" enabled="true">
+            <stringProp name="JMSSampler.queueconnectionfactory"></stringProp>
+            <stringProp name="JMSSampler.SendQueue"></stringProp>
+            <stringProp name="JMSSampler.ReceiveQueue"></stringProp>
+            <intProp name="JMSSampler.communicationStyle">0</intProp>
+            <boolProp name="JMSSampler.isNonPersistent">false</boolProp>
+            <boolProp name="JMSSampler.useReqMsgIdAsCorrelId">false</boolProp>
+            <stringProp name="JMSSampler.timeout"></stringProp>
+            <stringProp name="JMSSampler.jmsNumberOfSamplesToAggregate"></stringProp>
+            <stringProp name="HTTPSamper.xml_data"></stringProp>
+            <stringProp name="JMSSampler.initialContextFactory"></stringProp>
+            <stringProp name="JMSSampler.contextProviderUrl"></stringProp>
+            <elementProp name="JMSSampler.jndiProperties" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <elementProp name="arguments" elementType="JMSProperties">
+              <collectionProp name="JMSProperties.properties"/>
+            </elementProp>
+          </JMSSampler>
           <hashTree/>
         </hashTree>
       </hashTree>
