@@ -24,8 +24,9 @@ Apache JMeterのGUIを日本語化します。
 ## インストール(Windows)
 
 zipと、JDK(≦1.8)のnative2asciiが必要です。
+JMETER_HOMEの設定が必要です。
 
-JMeterのGUIを終了し、build.shのJMETER_HOMEを書き換えて実行します。
+JMeterのGUIを終了し、install.shを書き換えて実行します。
 必要に応じて管理者権限で実行します。
 .jarファイルを書き換えるので注意してください。
 

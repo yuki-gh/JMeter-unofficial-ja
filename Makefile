@@ -1,6 +1,6 @@
 
-build:
-	/usr/bin/bash build.sh
+install:
+	/usr/bin/bash install.sh
 
 clean:
 	rm -rf org
