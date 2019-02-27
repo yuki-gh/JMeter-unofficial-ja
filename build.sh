@@ -1,5 +1,21 @@
 #! /usr/bin/bash
-JMETER_HOME=C:/Server/apache-jmeter-5.1
+
+if [ "$OSTYPE" = cygwin ]
+then
+	export JMETER_HOME=`cygpath $JMETER_HOME`
+fi
+
+if ! type -p zip > /dev/null
+then
+	echo "zip not found"
+	exit 1
+fi
+if ! type -p native2ascii > /dev/null
+then
+	echo "native2ascii not found"
+	exit 1
+fi
+
 IFS=,
 for f in *.jar.txt
 do
