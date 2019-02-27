@@ -2,11 +2,17 @@
 
 # set env
 
-if [ "$OSTYPE" = cygwin ]
-then
+case "$OSTYPE" in
+cygwin)
 	export JAVA_HOME=`cygpath "$JAVA_HOME"`
 	export JMETER_HOME=`cygpath "$JMETER_HOME"`
-fi
+	;;
+darwin*)
+	export JMETER_HOME=/usr/local/Cellar/jmeter/5.0/libexec
+	;;
+linux*)
+	;;
+esac
 
 # check commands
 
