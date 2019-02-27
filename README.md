@@ -20,6 +20,7 @@ Apache JMeterのGUIを日本語化します。
 - Apache JMeter 5.1
 - Windows 7 Pro x64 SP1 日本語版
 - Windows 10 Home x64 1809 日本語版
+- JDK 1.8.0_201
 - cygwin 2.11
 
 ## インストール(Windows)
@@ -36,6 +37,11 @@ set JMETER_LANGUAGE=-Duser.language="ja"
 ```
 
 ## 注意
+
+以下のものは翻訳されません。
+
+- HTML Assertion
+- テンプレートの説明
 
 表示されているキーボードショートカットが機能しない箇所があります。
 
