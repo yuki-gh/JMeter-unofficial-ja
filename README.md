@@ -1,11 +1,11 @@
-# JMeter��������{��J�^���O
+﻿# JMeter非公式日本語カタログ
 # Unofficial Japanese Catalog for JMeter
 
-## �T�v
+## 概要
 
-Apache JMeter��UI����{�ꉻ���܂��B
+Apache JMeterのGUIを日本語化します。
 
-## ���e
+## 内容
 
 - ApacheJMeter_*.jar.txt
 - build.sh
@@ -14,44 +14,45 @@ Apache JMeter��UI����{�ꉻ���܂��B
 - Makefile
 - Test.jmx
 
-## �v���b�g�t�H�[��
+## プラットフォーム
 
 - Apache JMeter 5.1
-- Windows 7 Pro x64 SP1 ���{���
-- Windows 10 Home x64 1809 ���{���
+- Windows 7 Pro x64 SP1 日本語版
+- Windows 10 Home x64 1809 日本語版
+- cygwin 2.11
 
-## �C���X�g�[��(Windows)
+## インストール(Windows)
 
-zip�ƁAJDK(��1.8)��native2ascii���K�v�ł��B
+zipと、JDK(≦1.8)のnative2asciiが必要です。
 
-build.sh��JMETER_HOME�����������Ď��s���܂��B
-�K�v�ɉ����ĊǗ��Ҍ����Ŏ��s���܂��B
-.jar�t�@�C��������������̂Œ��ӂ��Ă��������B
+JMeterのGUIを終了し、build.shのJMETER_HOMEを書き換えて実行します。
+必要に応じて管理者権限で実行します。
+.jarファイルを書き換えるので注意してください。
 
-���{��ŋN������ɂ́Abin\setenv.bat�Ɉȉ��̂悤�ɏ����܂��B
+日本語で起動するには、bin\setenv.batに以下のように書きます。
 ```
 set JMETER_LANGUAGE=-Duser.language="ja"
 ```
 
-## ����
+## 注意
 
-�\������Ă���L�[�{�[�h�V���[�g�J�b�g���@�\���Ȃ��ӏ�������܂��B
+表示されているキーボードショートカットが機能しない箇所があります。
 
-�|�󂪔��f����Ȃ��ӏ�������܂��B
+翻訳が反映されない箇所があります。
 
-## �Ɛ�
+## 免責
 
-�|��̐��m���ɂ��Ă͕ۏ؂��܂���B
+翻訳の正確さについては保証しません。
 
-�{�p�b�P�[�W�̎g�p�ɔ������Q�E�s���v�E�편���v�Ȃǂɂ��č�҂͈�ؐӔC�𕉂��܂���B
+本パッケージの使用に伴う損害・不利益・逸失利益などについて作者は一切責任を負いません。
 
-�{�p�b�P�[�W�ɂ���Apache���̑��ւ̖₢���킹�͂��������������B
+本パッケージについてApacheその他への問い合わせはご遠慮ください。
 
-## ���C�Z���X
+## ライセンス
 
-�I���W�i���ɏ]���܂��B
+オリジナルに従います。
 
-## ���
+## 作者
 
 Takayuki ITO <yuki@euc.jp>
 
