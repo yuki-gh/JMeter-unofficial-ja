@@ -584,6 +584,13 @@
             <intProp name="OnError.action">0</intProp>
           </ResultAction>
           <hashTree/>
+          <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="デバッグ後処理" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySamplerProperties">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugPostProcessor>
+          <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="設定エレメント" enabled="true"/>
         <hashTree>
@@ -1405,28 +1412,8 @@
           </JDBCDataSource>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="その他" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ツールチップ要翻訳" enabled="true"/>
         <hashTree>
-          <JMSSampler guiclass="JMSSamplerGui" testclass="JMSSampler" testname="JMS Point-to-Point" enabled="true">
-            <stringProp name="JMSSampler.queueconnectionfactory"></stringProp>
-            <stringProp name="JMSSampler.SendQueue"></stringProp>
-            <stringProp name="JMSSampler.ReceiveQueue"></stringProp>
-            <intProp name="JMSSampler.communicationStyle">0</intProp>
-            <boolProp name="JMSSampler.isNonPersistent">false</boolProp>
-            <boolProp name="JMSSampler.useReqMsgIdAsCorrelId">false</boolProp>
-            <stringProp name="JMSSampler.timeout"></stringProp>
-            <stringProp name="JMSSampler.jmsNumberOfSamplesToAggregate"></stringProp>
-            <stringProp name="HTTPSamper.xml_data"></stringProp>
-            <stringProp name="JMSSampler.initialContextFactory"></stringProp>
-            <stringProp name="JMSSampler.contextProviderUrl"></stringProp>
-            <elementProp name="JMSSampler.jndiProperties" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <elementProp name="arguments" elementType="JMSProperties">
-              <collectionProp name="JMSProperties.properties"/>
-            </elementProp>
-          </JMSSampler>
-          <hashTree/>
           <AccessLogSampler guiclass="TestBeanGUI" testclass="AccessLogSampler" testname="アクセスログサンプラー" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments"/>
@@ -1465,13 +1452,6 @@
             <boolProp name="perThread">false</boolProp>
           </RandomVariableConfig>
           <hashTree/>
-          <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="デバッグ後処理" enabled="true">
-            <boolProp name="displayJMeterProperties">false</boolProp>
-            <boolProp name="displayJMeterVariables">true</boolProp>
-            <boolProp name="displaySamplerProperties">true</boolProp>
-            <boolProp name="displaySystemProperties">false</boolProp>
-          </DebugPostProcessor>
-          <hashTree/>
           <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="高精度スループットタイマー" enabled="true">
             <doubleProp>
               <name>allowedThroughputSurplus</name>
@@ -1492,6 +1472,29 @@
           </PreciseThroughputTimer>
           <hashTree/>
         </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="その他" enabled="true"/>
+        <hashTree>
+          <JMSSampler guiclass="JMSSamplerGui" testclass="JMSSampler" testname="JMS Point-to-Point" enabled="true">
+            <stringProp name="JMSSampler.queueconnectionfactory"></stringProp>
+            <stringProp name="JMSSampler.SendQueue"></stringProp>
+            <stringProp name="JMSSampler.ReceiveQueue"></stringProp>
+            <intProp name="JMSSampler.communicationStyle">0</intProp>
+            <boolProp name="JMSSampler.isNonPersistent">false</boolProp>
+            <boolProp name="JMSSampler.useReqMsgIdAsCorrelId">false</boolProp>
+            <stringProp name="JMSSampler.timeout"></stringProp>
+            <stringProp name="JMSSampler.jmsNumberOfSamplesToAggregate"></stringProp>
+            <stringProp name="HTTPSamper.xml_data"></stringProp>
+            <stringProp name="JMSSampler.initialContextFactory"></stringProp>
+            <stringProp name="JMSSampler.contextProviderUrl"></stringProp>
+            <elementProp name="JMSSampler.jndiProperties" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <elementProp name="arguments" elementType="JMSProperties">
+              <collectionProp name="JMSProperties.properties"/>
+            </elementProp>
+          </JMSSampler>
+          <hashTree/>
+        </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="未翻訳" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1506,18 +1509,15 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="その他" enabled="true"/>
-        <hashTree>
-          <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="HTML アサーション" enabled="true">
-            <longProp name="html_assertion_error_threshold">0</longProp>
-            <longProp name="html_assertion_warning_threshold">0</longProp>
-            <stringProp name="html_assertion_doctype">omit</stringProp>
-            <boolProp name="html_assertion_errorsonly">false</boolProp>
-            <longProp name="html_assertion_format">0</longProp>
-            <stringProp name="html_assertion_filename"></stringProp>
-          </HTMLAssertion>
-          <hashTree/>
-        </hashTree>
+        <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="HTML アサーション" enabled="true">
+          <longProp name="html_assertion_error_threshold">0</longProp>
+          <longProp name="html_assertion_warning_threshold">0</longProp>
+          <stringProp name="html_assertion_doctype">omit</stringProp>
+          <boolProp name="html_assertion_errorsonly">false</boolProp>
+          <longProp name="html_assertion_format">0</longProp>
+          <stringProp name="html_assertion_filename"></stringProp>
+        </HTMLAssertion>
+        <hashTree/>
       </hashTree>
       <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP プロキシサーバ" enabled="true">
         <stringProp name="ProxyControlGui.port">8888</stringProp>
