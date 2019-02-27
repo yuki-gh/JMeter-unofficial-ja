@@ -11,7 +11,7 @@ darwin*)
 	export JMETER_HOME=/usr/local/Cellar/jmeter/5.0/libexec
 	;;
 linux*)
-	export JMETER_HOME=/usr/share/jmeter
+	export JMETER_HOME=/usr/local/jmeter
 	;;
 esac
 
