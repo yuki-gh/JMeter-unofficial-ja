@@ -18,18 +18,16 @@ Apache JMeterのGUIを日本語化します。
 ## プラットフォーム
 
 - Apache JMeter 5.1
-
-- Windows 7 Pro x64 SP1 日本語版
-- Windows 10 Home x64 1809 日本語版
-- cygwin 2.11
-- JDK 1.8.0_201
-
+- Windows
+	- Windows 7 Pro x64 SP1 日本語版
+	- Windows 10 Home x64 1809 日本語版
+	- cygwin 2.11
+	- JDK 1.8.0_201
 - macOS 10.14 Mojave
-
-- CentOS 7.3
-- Ubuntu 16.04 (WSL)
-- Debian GNU/Linux 9 (WLinux)
-- OpenJDK 8
+- Linux
+	- Ubuntu 16.04 (WSL)
+	- Debian GNU/Linux 9 (WLinux)
+	- OpenJDK 8
 
 ## インストール
 
@@ -52,8 +50,6 @@ set JMETER_LANGUAGE=-Duser.language="ja"
 
 ### Linux
 
-aptでインストールされるJMeterは古いので、公式サイトの最新版を展開してください。
-
 環境によっては日本語フォントのインストール・設定が必要です。
 
 起動時から日本語にするには、bin/setenv.shに以下のように書きます。
@@ -63,10 +59,14 @@ JMETER_LANGUAGE=-Duser.language="ja"
 
 ## 注意
 
+Debian系の場合、aptでインストールされるJMeterは古いので、[公式サイト](https://jmeter.apache.org/download_jmeter.cgi)の最新版を展開してください。
+
 以下のものは翻訳されません。
 
 - HTML Assertion
 - テンプレートの説明
+- DEPRECATEDなプラグイン
+- CLI
 
 表示されているキーボードショートカットが機能しない箇所があります。
 
