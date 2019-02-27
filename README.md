@@ -8,10 +8,11 @@ Apache JMeterのGUIを日本語化します。
 ## 内容
 
 - ApacheJMeter_*.jar.txt
-- build.sh
 - en/*.properties
+- install.sh
 - ja/*_ja.properties
 - Makefile
+- README.md
 - Test.jmx
 
 ## プラットフォーム
@@ -26,11 +27,10 @@ Apache JMeterのGUIを日本語化します。
 zipと、JDK(≦1.8)のnative2asciiが必要です。
 JMETER_HOMEの設定が必要です。
 
-JMeterのGUIを終了し、install.shを書き換えて実行します。
-必要に応じて管理者権限で実行します。
-.jarファイルを書き換えるので注意してください。
+JMeterのGUIを終了し、install.shを(必要に応じて管理者権限で)実行します。
+$JMETER_HOME/lib/ext/*.jarを書き換えるので注意してください。
 
-日本語で起動するには、bin\setenv.batに以下のように書きます。
+起動時から日本語にするには、bin\setenv.batに以下のように書きます。
 ```
 set JMETER_LANGUAGE=-Duser.language="ja"
 ```
