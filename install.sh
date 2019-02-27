@@ -4,14 +4,13 @@
 
 case "$OSTYPE" in
 cygwin)
-	export JAVA_HOME=`cygpath "$JAVA_HOME"`
 	export JMETER_HOME=`cygpath "$JMETER_HOME"`
 	;;
 darwin*)
-	export JMETER_HOME=/usr/local/Cellar/jmeter/5.0/libexec
+	#export JMETER_HOME=/usr/local/Cellar/jmeter/5.0/libexec
 	;;
 linux*)
-	export JMETER_HOME=/usr/local/jmeter
+	#export JMETER_HOME=/usr/local/jmeter
 	;;
 esac
 
