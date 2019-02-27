@@ -11,17 +11,18 @@ darwin*)
 	export JMETER_HOME=/usr/local/Cellar/jmeter/5.0/libexec
 	;;
 linux*)
+	export JMETER_HOME=/usr/share/jmeter
 	;;
 esac
 
 # check commands
 
-if ! type -p zip > /dev/null
+if ! type zip > /dev/null 2>&1
 then
 	echo "zip not found"
 	exit 1
 fi
-if ! type -p native2ascii > /dev/null
+if ! type native2ascii > /dev/null 2>&1
 then
 	echo "native2ascii not found"
 	exit 1
@@ -39,6 +40,9 @@ popd
 IFS=,
 for f in *.jar.txt
 do
+	TARGET_JAR=$JMETER_HOME/lib/ext/${f%.txt}
+	if [ -w $TARGET_JAR ]
+	then
 	rm -rf org
 	cat $f | while read l
 	do
@@ -46,9 +50,10 @@ do
 		path=$1
 		file=$2_ja.properties
 		mkdir -p $1
-		$JAVA_HOME/bin/native2ascii -encoding utf8 ja/$file $path/$file
+		native2ascii -encoding utf8 ja/$file $path/$file
 		#echo zip -u $JMETER_HOME/lib/ext/${f%.txt} $path/$file
 	done
-	zip -u -r $JMETER_HOME/lib/ext/${f%.txt} org
+	zip -u -r $TARGET_JAR org
+fi
 done
 rm -rf org
