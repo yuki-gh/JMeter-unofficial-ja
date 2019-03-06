@@ -472,6 +472,12 @@
             <stringProp name="DurationAssertion.duration"></stringProp>
           </DurationAssertion>
           <hashTree/>
+          <CompareAssertion guiclass="TestBeanGUI" testclass="CompareAssertion" testname="比較アサーション" enabled="true">
+            <boolProp name="compareContent">true</boolProp>
+            <longProp name="compareTime">-1</longProp>
+            <collectionProp name="stringsToSkip"/>
+          </CompareAssertion>
+          <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="タイマ" enabled="true"/>
         <hashTree>
@@ -1412,12 +1418,6 @@
             <intProp name="groupSize">0</intProp>
             <longProp name="timeoutInMs">0</longProp>
           </SyncTimer>
-          <hashTree/>
-          <CompareAssertion guiclass="TestBeanGUI" testclass="CompareAssertion" testname="比較アサーション" enabled="true">
-            <boolProp name="compareContent">true</boolProp>
-            <longProp name="compareTime">-1</longProp>
-            <collectionProp name="stringsToSkip"/>
-          </CompareAssertion>
           <hashTree/>
           <KeystoreConfig guiclass="TestBeanGUI" testclass="KeystoreConfig" testname="キーストア構成" enabled="true">
             <stringProp name="preload">True</stringProp>
