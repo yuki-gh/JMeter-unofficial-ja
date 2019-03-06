@@ -96,10 +96,10 @@
         <h2>概要</h2>
         This is a sample JSR223 sampler which shows how to use some of its features with Apache Groovy language
         <br/>
-        Please select a suitable location in the tree before merging.
+        マージする前にツリー内の適切な場所を選択してください。
         <h2>参考リンク</h2>
             <ul>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#JSR223_Sampler" >JSR223 Sampler</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#JSR223_Sampler" >JSR223サンプラー</a></li>
                 <li><a href="http://groovy-lang.org/documentation.html" >Apache Groovy</a></li>
             </ul>
         ]]></description>
@@ -112,7 +112,7 @@
         <h2>概要</h2>
         This is a sample BeanShell sampler which shows how to use some of its features.
         <br/>
-        Please select a suitable location in the tree before merging.
+        マージする前にツリー内の適切な場所を選択してください。
         <h2>参考リンク</h2>
             <ul>
                 <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#BeanShell_Sampler" >http://jmeter.apache.org/usermanual/component_reference.html#BeanShell_Sampler</a></li>
@@ -123,7 +123,7 @@
         <name>MongoDBの負荷試験</name>
         <fileName>mongodb.jmx</fileName>
         <description>
-        <![CDATA[<h1>MongoDB Javaドライバを用いてMongDBコードを負荷試験する方法を示すテンプレート</h1>
+        <![CDATA[<h1>MongoDB Javaドライバを用いてMongoDBコードを負荷試験する方法を示すテンプレート</h1>
         <h2>JMeterの構成</h2>
             <ul>
                 <li>Configure the <b>Server address list</b>, and tune <b>MongoDB options</b> in MongoDB Source Config</li>
@@ -177,11 +177,11 @@
         <h1>SOAPウェブサービスのテスト計画を作成する方法を示すテスト計画</h1>
         <h2>参考リンク</h2>
             <ul>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#User_Defined_Variables" >User Defined Variables</a></li>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request_Defaults" >User Defined Variables</a></li>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request" >HTTP Request</a></li>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Response_Assertion">Response Assertion</a></li>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Header_Manager">HTTP Header Manager</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#User_Defined_Variables" >ユーザー定義変数</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request_Defaults" >HTTPリクエスト初期値設定</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request" >HTTPリクエスト</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Response_Assertion">応答アサーション</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Header_Manager">HTTPヘッダマネージャ</a></li>
             </ul>       
         ]]></description>
     </template>
@@ -226,11 +226,11 @@
         <h2>概要</h2>
         This shows how to introduce a Think Time of 1s+/- 100 ms between 2 samplers 
         <br/>
-        Please select a suitable location in the tree - e.g. Thread Group or Controller - before merging.
+        マージする前にツリー内の適切な場所(例 スレッドグループまたはコントローラ)を選択してください。
         <h2>参考リンク</h2>
             <ul>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Test_Action" >Test Action</a></li>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Uniform_Random_Timer" >Uniform Random Timer</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Test_Action" >テストアクション</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Uniform_Random_Timer" >一様乱数タイマー</a></li>
             </ul>
         ]]></description>
     </template>

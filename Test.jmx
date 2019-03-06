@@ -324,6 +324,17 @@
             <stringProp name="ActionProcessor.duration">0</stringProp>
           </TestAction>
           <hashTree/>
+          <AccessLogSampler guiclass="TestBeanGUI" testclass="AccessLogSampler" testname="アクセスログサンプラー" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="domain"></stringProp>
+            <boolProp name="imageParsing">false</boolProp>
+            <stringProp name="logFile"></stringProp>
+            <stringProp name="parserClassName">org.apache.jmeter.protocol.http.util.accesslog.TCLogParser</stringProp>
+            <stringProp name="portString"></stringProp>
+          </AccessLogSampler>
+          <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ロジックコントローラ" enabled="true"/>
         <hashTree>
@@ -1397,17 +1408,6 @@
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ツールチップ要翻訳" enabled="true"/>
         <hashTree>
-          <AccessLogSampler guiclass="TestBeanGUI" testclass="AccessLogSampler" testname="アクセスログサンプラー" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="domain"></stringProp>
-            <boolProp name="imageParsing">false</boolProp>
-            <stringProp name="logFile"></stringProp>
-            <stringProp name="parserClassName">org.apache.jmeter.protocol.http.util.accesslog.TCLogParser</stringProp>
-            <stringProp name="portString"></stringProp>
-          </AccessLogSampler>
-          <hashTree/>
           <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同期タイマー" enabled="true">
             <intProp name="groupSize">0</intProp>
             <longProp name="timeoutInMs">0</longProp>
