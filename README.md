@@ -9,8 +9,10 @@ Apache JMeterのGUIを日本語化します。
 
 - ApacheJMeter_*.jar.txt
 - en/*.properties
+- en/templates.xml
 - install.sh
 - ja/*_ja.properties
+- ja/templates.xml
 - Makefile
 - README.md
 - Test.jmx
@@ -21,7 +23,7 @@ Apache JMeterのGUIを日本語化します。
 - Windows
 	- Windows 7 Pro x64 SP1 日本語版
 	- Windows 10 Home x64 1809 日本語版
-	- cygwin 2.11
+	- cygwin 3.0
 	- JDK 1.8.0_201
 - macOS 10.14 Mojave
 - Linux
@@ -64,7 +66,7 @@ Debian系の場合、aptでインストールされるJMeterは古いので、[�
 以下のものは翻訳されません。
 
 - HTML Assertion
-- テンプレートの説明
+- テンプレートの内容
 - DEPRECATEDなプラグイン
 - CLI
 

@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<!-- 
+    See the DTD for allowable elements and attributes.
+ -->
+<!DOCTYPE templates SYSTEM "templates.dtd">
+<templates>
+    <template isTestPlan="true">
+        <name>記録</name>
+        <fileName>/bin/templates/recording.jmx</fileName>
+        <description><![CDATA[
+        <h1>記録の方法を示すテンプレート</h1>
+        <h2>JMeterの構成</h2>
+            <ul>
+                <li>JMeter Server Proxy port is set to 8888, you may want to change this</li>
+            </ul>
+        <h2>ブラウザの構成</h2>
+        <p>Configure your browser so that it uses the JMeter proxy, set:
+            <ul>
+                <li>the host of the machine that runs JMeter</li>
+                <li>the port you setup in JMeter Server Proxy</li>
+            </ul>
+        </p>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/jmeter_proxy_step_by_step.pdf" >http://jmeter.apache.org/usermanual/jmeter_proxy_step_by_step.pdf</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Proxy_Server" >http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Proxy_Server</a></li>
+            </ul>       
+        ]]></description>
+        <parameters>
+            <parameter defaultValue="recording.xml" key="recordingOutputFile"/>
+            <parameter defaultValue="www.example.com" key="hostToRecord"/>
+            <parameter defaultValue="https" key="schemeToRecord"/>
+        </parameters>
+    </template>
+    <template isTestPlan="true">
+        <name>考慮時間つきで記録</name>
+        <fileName>/bin/templates/recording-with-think-time.jmx</fileName>
+        <description><![CDATA[
+        <h1>考慮時間つきで記録する方法を示すテンプレート</h1>
+        <h2>JMeterの構成</h2>
+            <ul>
+                <li>JMeter Server Proxy port is set to 8888, you may want to change this</li>
+            </ul>
+        <h2>ブラウザの構成</h2>
+        <p>Configure your browser so that it uses the JMeter proxy, set:
+            <ul>
+                <li>the host of the machine that runs JMeter</li>
+                <li>the port you setup in JMeter Server Proxy</li>
+            </ul>
+        </p>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/jmeter_proxy_step_by_step.pdf" >http://jmeter.apache.org/usermanual/jmeter_proxy_step_by_step.pdf</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Proxy_Server" >http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Proxy_Server</a></li>
+            </ul>       
+        ]]></description>
+    </template>
+    <template isTestPlan="true">
+        <name>JDBCの負荷試験</name>
+        <fileName>jdbc.jmx</fileName>
+        <description>
+        <![CDATA[<h1>データベースのSQLクエリを負荷試験する方法を示すテンプレート</h1>
+        <h2>JMeterの構成</h2>
+            <ul>
+                <li>Add the database driver to jmeter/lib folder</li>
+                <li>Configure the host, port, username and password in JDBC Configuration</li>
+                <li>Modify the SQL query to match your query</li>
+            </ul>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/build-db-test-plan.html" >http://jmeter.apache.org/usermanual/build-db-test-plan.html</a></li>
+            </ul>
+        ]]></description>
+    </template>
+    <template isTestPlan="false">
+        <name>Groovyを用いたJSR223サンプラー</name>
+        <fileName>GroovyJSR223Sampler.jmx</fileName>
+        <description><![CDATA[
+        <h1>Groovyを用いたJSR223サンプラーの例</h1>
+        <h2>概要</h2>
+        This is a sample JSR223 sampler which shows how to use some of its features with Apache Groovy language
+        <br/>
+        マージする前にツリー内の適切な場所を選択してください。
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#JSR223_Sampler" >JSR223サンプラー</a></li>
+                <li><a href="http://groovy-lang.org/documentation.html" >Apache Groovy</a></li>
+            </ul>
+        ]]></description>
+    </template>
+    <template isTestPlan="false">
+        <name>BeanShellサンプラー</name>
+        <fileName>BeanShellSampler.jmx</fileName>
+        <description><![CDATA[
+        <h1>BeanShellサンプラーの例</h1>
+        <h2>概要</h2>
+        This is a sample BeanShell sampler which shows how to use some of its features.
+        <br/>
+        マージする前にツリー内の適切な場所を選択してください。
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#BeanShell_Sampler" >http://jmeter.apache.org/usermanual/component_reference.html#BeanShell_Sampler</a></li>
+            </ul>
+        ]]></description>
+    </template>
+    <template isTestPlan="true">
+        <name>MongoDBの負荷試験</name>
+        <fileName>mongodb.jmx</fileName>
+        <description>
+        <![CDATA[<h1>MongoDB Javaドライバを用いてMongoDBコードを負荷試験する方法を示すテンプレート</h1>
+        <h2>JMeterの構成</h2>
+            <ul>
+                <li>Configure the <b>Server address list</b>, and tune <b>MongoDB options</b> in MongoDB Source Config</li>
+                <li>Modify the JSR223 samples (<b>Insert into testCollection</b> and <b>Count from testCollection</b>) to match your needs</li>
+            </ul>
+        <h2>Mongo Javaドライバ</h2>
+        <p>
+            MongoDB Source Config configures the connection to MongoDB for you and stores in <b>MongoDB Source</b> the configuration.<br/>
+            You can then access it in any Scripting element using:<br/>
+            <i>com.mongodb.DB db = org.apache.jmeter.protocol.mongodb.config.MongoDBHolder.getDBFromSource("db", "test");<i>
+        </p>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/#getting-started-with-java-driver" >Getting Started with Java Driver (<i>Making a connection</i> part is already done by MongoDB Source Config)</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#MongoDB_Source_Config" >http://jmeter.apache.org/usermanual/component_reference.html#MongoDB_Source_Config</a></li>
+            </ul>
+        ]]></description>
+    </template>
+    <template isTestPlan="true">
+        <name>ウェブのテスト計画を構築</name>
+        <fileName>/bin/templates/build-web-test-plan.jmx</fileName>
+        <description><![CDATA[
+        <h1>ユーザーズマニュアルの「ウェブのテスト計画を構築」節からのテスト計画</h1>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/build-web-test-plan.html" >http://jmeter.apache.org/usermanual/build-web-test-plan.html</a></li>
+            </ul>       
+        ]]></description>
+    </template>
+    <template isTestPlan="true">
+        <name>高度なウェブのテスト計画を構築</name>
+        <fileName>/bin/templates/build-adv-web-test-plan.jmx</fileName>
+        <description><![CDATA[
+        <h1>ユーザーズマニュアルの「高度なウェブのテスト計画を構築」節からのテスト計画</h1>
+        <h2>構成</h2>
+        <p>In order to run the login sample inside plan, create a CSV file following description in <b>loginData</b> sample and put it in a folder of your choice then test running JMeter with:<br/>
+            <ul>
+                <li><b>jmeter -Jresources_folder=FOLDER TO CHANGE</b></li>
+            </ul>
+        </p>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/build-adv-web-test-plan.html" >http://jmeter.apache.org/usermanual/build-adv-web-test-plan.html</a></li>
+            </ul>       
+        ]]></description>
+    </template>
+    <template isTestPlan="true">
+        <name>SOAPウェブサービスのテスト計画を構築</name>
+        <fileName>/bin/templates/build-webservice-test-plan.jmx</fileName>
+        <description><![CDATA[
+        <h1>SOAPウェブサービスのテスト計画を作成する方法を示すテスト計画</h1>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#User_Defined_Variables" >ユーザー定義変数</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request_Defaults" >HTTPリクエスト初期値設定</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request" >HTTPリクエスト</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Response_Assertion">応答アサーション</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Header_Manager">HTTPヘッダマネージャ</a></li>
+            </ul>       
+        ]]></description>
+    </template>
+    <template isTestPlan="true">
+        <name>FTPのテスト計画を構築</name>
+        <fileName>/bin/templates/build-ftp-test-plan.jmx</fileName>
+        <description><![CDATA[
+        <h1>ユーザーズマニュアルの「FTPのテスト計画を構築」節からのテスト計画</h1>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/build-ftp-test-plan.html" >http://jmeter.apache.org/usermanual/build-ftp-test-plan.html</a></li>
+            </ul>       
+        ]]></description>
+    </template>
+    <template isTestPlan="true">
+        <name>LDAPのテスト計画を構築</name>
+        <fileName>/bin/templates/build-ldap-test-plan.jmx</fileName>
+        <description><![CDATA[
+        <h1>ユーザーズマニュアルの「LDAPのテスト計画を構築」節からのテスト計画</h1>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/build-ldap-test-plan.html" >http://jmeter.apache.org/usermanual/build-ldap-test-plan.html</a></li>
+            </ul>       
+        ]]></description>
+    </template>
+    <template isTestPlan="true">
+        <name>拡張LDAPのテスト計画を構築</name>
+        <fileName>/bin/templates/build-ldap-ext-test-plan.jmx</fileName>
+        <description><![CDATA[
+        <h1>ユーザーズマニュアルの「拡張LDAPのテスト計画を構築」節からのテスト計画</h1>
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/build-ldapext-test-plan.html" >http://jmeter.apache.org/usermanual/build-ldapext-test-plan.html</a></li>
+            </ul>       
+        ]]></description>
+    </template>
+    <template isTestPlan="false">
+        <name>ある時点での考慮時間</name>
+        <fileName>ThinkTime.jmx</fileName>
+        <description><![CDATA[
+        <h1>2つのサンプラーの間の考慮時間</h1>
+        <h2>概要</h2>
+        This shows how to introduce a Think Time of 1s+/- 100 ms between 2 samplers 
+        <br/>
+        マージする前にツリー内の適切な場所(例 スレッドグループまたはコントローラ)を選択してください。
+        <h2>参考リンク</h2>
+            <ul>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Test_Action" >テストアクション</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Uniform_Random_Timer" >一様乱数タイマー</a></li>
+            </ul>
+        ]]></description>
+    </template>
+</templates>

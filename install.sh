@@ -34,7 +34,7 @@ pushd "$JMETER_HOME/lib/ext"
 cp -n *.jar orig
 popd
 
-# install
+# install props
 
 IFS=,
 for f in *.jar.txt
@@ -56,3 +56,11 @@ do
 fi
 done
 rm -rf org
+
+# install template catalog
+
+pushd $JMETER_HOME/bin/templates
+[ -f templates.xml.orig ] || mv templates.xml templates.xml.orig
+popd
+cp ja/templates.xml $JMETER_HOME/bin/templates
+
