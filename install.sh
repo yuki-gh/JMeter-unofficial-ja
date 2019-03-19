@@ -64,3 +64,7 @@ pushd $JMETER_HOME/bin/templates
 popd
 cp ja/templates.xml $JMETER_HOME/bin/templates
 
+# install setenv
+
+echo 'JMETER_LANGUAGE=-Duser.language="ja"' >> $JMETER_HOME/bin/setenv.sh
+echo 'set JMETER_LANGUAGE=-Duser.language="ja"' | unix2dos >> $JMETER_HOME/bin/setenv.bat
