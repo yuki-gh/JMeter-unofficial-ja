@@ -19,7 +19,7 @@ Apache JMeterのGUIを日本語化します。
 
 ## プラットフォーム
 
-- Apache JMeter 5.1
+- Apache JMeter 5.1.1
 - Windows
 	- Windows 7 Pro x64 SP1 日本語版
 	- Windows 10 Home x64 1809 日本語版
@@ -29,6 +29,7 @@ Apache JMeterのGUIを日本語化します。
 - Linux
 	- Ubuntu 16.04 (WSL)
 	- Debian GNU/Linux 9 (WLinux)
+	- Alpine Linux 3.9 (WSL)
 	- OpenJDK 8
 
 ## インストール
