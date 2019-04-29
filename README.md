@@ -29,7 +29,6 @@ Apache JMeterのGUIを日本語化します。
 - Linux
 	- Ubuntu 16.04 (WSL)
 	- Debian GNU/Linux 9 (WLinux)
-	- Alpine Linux 3.9 (WSL)
 	- OpenJDK 8
 
 ## インストール
@@ -44,21 +43,11 @@ $JMETER_HOME/lib/ext/*.jarを書き換えるので注意してください。
 
 ### Windows
 
-起動時から日本語にするには、bin\setenv.batに以下のように書きます。
-```
-set JMETER_LANGUAGE=-Duser.language="ja"
-```
-
 ### macOS
 
 ### Linux
 
 環境によっては日本語フォントのインストール・設定が必要です。
-
-起動時から日本語にするには、bin/setenv.shに以下のように書きます。
-```
-JMETER_LANGUAGE=-Duser.language="ja"
-```
 
 ## 注意
 
