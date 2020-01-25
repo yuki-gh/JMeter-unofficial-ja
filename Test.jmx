@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1 r1853635">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="テスト計画" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -23,6 +23,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </SetupThreadGroup>
       <hashTree/>
       <PostThreadGroup guiclass="PostThreadGroupGui" testclass="PostThreadGroup" testname="tearDownスレッドグループ" enabled="true">
@@ -36,6 +37,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </PostThreadGroup>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="翻訳済" enabled="true">
@@ -49,6 +51,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="サンプラー" enabled="true"/>
@@ -141,9 +144,9 @@
           </PublisherSampler>
           <hashTree/>
           <JUnitSampler guiclass="JUnitTestSamplerGui" testclass="JUnitSampler" testname="JUnitリクエスト" enabled="true">
-            <stringProp name="junitSampler.classname">test.RerunTest</stringProp>
+            <stringProp name="junitSampler.classname"></stringProp>
             <stringProp name="junitsampler.constructorstring"></stringProp>
-            <stringProp name="junitsampler.method">testRerun</stringProp>
+            <stringProp name="junitsampler.method"></stringProp>
             <stringProp name="junitsampler.pkg.filter"></stringProp>
             <stringProp name="junitsampler.success">テスト成功</stringProp>
             <stringProp name="junitsampler.success.code">1000</stringProp>
@@ -231,6 +234,7 @@
             <stringProp name="connection_timeout"></stringProp>
             <stringProp name="parseflag">false</stringProp>
             <stringProp name="secure">false</stringProp>
+            <stringProp name="trustall">false</stringProp>
             <stringProp name="user_dn"></stringProp>
             <stringProp name="user_pw"></stringProp>
             <stringProp name="comparedn"></stringProp>
@@ -615,30 +619,6 @@
             <collectionProp name="HeaderManager.headers"/>
           </HeaderManager>
           <hashTree/>
-          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP クッキーマネージャ" enabled="true">
-            <collectionProp name="CookieManager.cookies"/>
-            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
-          </CookieManager>
-          <hashTree/>
-          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP キャッシュマネージャ" enabled="true">
-            <boolProp name="clearEachIteration">false</boolProp>
-            <boolProp name="useExpires">true</boolProp>
-          </CacheManager>
-          <hashTree/>
-          <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP リクエスト初期値設定" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path"></stringProp>
-            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </ConfigTestElement>
-          <hashTree/>
           <ConfigTestElement guiclass="FtpConfigGui" testclass="ConfigTestElement" testname="FTP リクエスト初期値設定" enabled="true">
             <stringProp name="FTPSampler.server"></stringProp>
             <stringProp name="FTPSampler.port"></stringProp>
@@ -649,10 +629,6 @@
             <boolProp name="FTPSampler.saveresponse">false</boolProp>
             <boolProp name="FTPSampler.upload">false</boolProp>
           </ConfigTestElement>
-          <hashTree/>
-          <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP 認証マネージャ" enabled="true">
-            <collectionProp name="AuthManager.auth_list"/>
-          </AuthManager>
           <hashTree/>
           <JavaConfig guiclass="JavaConfigGui" testclass="JavaConfig" testname="Java リクエスト初期値設定" enabled="true">
             <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
@@ -715,6 +691,7 @@
             <stringProp name="connection_timeout"></stringProp>
             <stringProp name="parseflag">false</stringProp>
             <stringProp name="secure">false</stringProp>
+            <stringProp name="trustall">false</stringProp>
             <stringProp name="user_dn"></stringProp>
             <stringProp name="user_pw"></stringProp>
             <stringProp name="comparedn"></stringProp>
@@ -1371,6 +1348,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ラベル要翻訳" enabled="true"/>
@@ -1409,7 +1387,112 @@
             <stringProp name="trimInterval">60000</stringProp>
             <stringProp name="username"></stringProp>
             <stringProp name="initQuery"></stringProp>
+            <boolProp name="preinit">false</boolProp>
+            <stringProp name="connectionProperties"></stringProp>
           </JDBCDataSource>
+          <hashTree/>
+          <BoltSampler guiclass="TestBeanGUI" testclass="BoltSampler" testname="Bolt Request" enabled="true">
+            <stringProp name="cypher"></stringProp>
+            <stringProp name="params">{&quot;paramName&quot;:&quot;paramValue&quot;}</stringProp>
+            <boolProp name="recordQueryResults">true</boolProp>
+          </BoltSampler>
+          <hashTree/>
+          <XPath2Assertion guiclass="XPath2AssertionGui" testclass="XPath2Assertion" testname="XPath2 Assertion" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/</stringProp>
+            <stringProp name="XPath.namespaces"></stringProp>
+          </XPath2Assertion>
+          <hashTree/>
+          <JMESPathAssertion guiclass="JMESPathAssertionGui" testclass="JMESPathAssertion" testname="JSON JMESPath Assertion" enabled="true">
+            <stringProp name="JMES_PATH"></stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JMESPathAssertion>
+          <hashTree/>
+          <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="JSON JMESPath Extractor" enabled="true">
+            <stringProp name="JMESExtractor.referenceName"></stringProp>
+            <stringProp name="JMESExtractor.jmesPathExpr"></stringProp>
+            <stringProp name="JMESExtractor.matchNumber"></stringProp>
+          </JMESPathExtractor>
+          <hashTree/>
+          <BoltConnectionElement guiclass="TestBeanGUI" testclass="BoltConnectionElement" testname="Bolt Connection Configuration" enabled="true">
+            <stringProp name="boltUri">bolt://localhost:7687</stringProp>
+            <stringProp name="password"></stringProp>
+            <stringProp name="username">neo4j</stringProp>
+          </BoltConnectionElement>
+          <hashTree/>
+          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP クッキーマネージャ" enabled="true">
+            <collectionProp name="CookieManager.cookies"/>
+            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+            <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+          </CookieManager>
+          <hashTree/>
+          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP キャッシュマネージャ" enabled="true">
+            <boolProp name="clearEachIteration">false</boolProp>
+            <boolProp name="useExpires">true</boolProp>
+            <boolProp name="CacheManager.controlledByThread">false</boolProp>
+          </CacheManager>
+          <hashTree/>
+          <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP 認証マネージャ" enabled="true">
+            <collectionProp name="AuthManager.auth_list"/>
+            <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+          </AuthManager>
+          <hashTree/>
+          <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP リクエスト初期値設定" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </ConfigTestElement>
+          <hashTree/>
+          <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBCリクエスト" enabled="true">
+            <stringProp name="dataSource"></stringProp>
+            <stringProp name="query"></stringProp>
+            <stringProp name="queryArguments"></stringProp>
+            <stringProp name="queryArgumentsTypes"></stringProp>
+            <stringProp name="queryTimeout"></stringProp>
+            <stringProp name="queryType">Select Statement</stringProp>
+            <stringProp name="resultSetHandler">Store as String</stringProp>
+            <stringProp name="resultVariable"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="resultSetMaxRows"></stringProp>
+          </JDBCSampler>
+          <hashTree/>
+          <JDBCPreProcessor guiclass="TestBeanGUI" testclass="JDBCPreProcessor" testname="JDBC前処理" enabled="true">
+            <stringProp name="dataSource"></stringProp>
+            <stringProp name="query"></stringProp>
+            <stringProp name="queryArguments"></stringProp>
+            <stringProp name="queryArgumentsTypes"></stringProp>
+            <stringProp name="queryTimeout"></stringProp>
+            <stringProp name="queryType">Select Statement</stringProp>
+            <stringProp name="resultSetHandler">Store as String</stringProp>
+            <stringProp name="resultVariable"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="resultSetMaxRows"></stringProp>
+          </JDBCPreProcessor>
+          <hashTree/>
+          <JDBCPostProcessor guiclass="TestBeanGUI" testclass="JDBCPostProcessor" testname="JDBC後処理" enabled="true">
+            <stringProp name="dataSource"></stringProp>
+            <stringProp name="query"></stringProp>
+            <stringProp name="queryArguments"></stringProp>
+            <stringProp name="queryArgumentsTypes"></stringProp>
+            <stringProp name="queryTimeout"></stringProp>
+            <stringProp name="queryType">Select Statement</stringProp>
+            <stringProp name="resultSetHandler">Store as String</stringProp>
+            <stringProp name="resultVariable"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="resultSetMaxRows"></stringProp>
+          </JDBCPostProcessor>
           <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ツールチップ要翻訳" enabled="true"/>
@@ -1434,42 +1517,6 @@
             <stringProp name="randomSeed"></stringProp>
             <boolProp name="perThread">false</boolProp>
           </RandomVariableConfig>
-          <hashTree/>
-          <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBCリクエスト" enabled="true">
-            <stringProp name="dataSource"></stringProp>
-            <stringProp name="query"></stringProp>
-            <stringProp name="queryArguments"></stringProp>
-            <stringProp name="queryArgumentsTypes"></stringProp>
-            <stringProp name="queryTimeout"></stringProp>
-            <stringProp name="queryType">Select Statement</stringProp>
-            <stringProp name="resultSetHandler">Store as String</stringProp>
-            <stringProp name="resultVariable"></stringProp>
-            <stringProp name="variableNames"></stringProp>
-          </JDBCSampler>
-          <hashTree/>
-          <JDBCPreProcessor guiclass="TestBeanGUI" testclass="JDBCPreProcessor" testname="JDBC前処理" enabled="true">
-            <stringProp name="dataSource"></stringProp>
-            <stringProp name="query"></stringProp>
-            <stringProp name="queryArguments"></stringProp>
-            <stringProp name="queryArgumentsTypes"></stringProp>
-            <stringProp name="queryTimeout"></stringProp>
-            <stringProp name="queryType">Select Statement</stringProp>
-            <stringProp name="resultSetHandler">Store as String</stringProp>
-            <stringProp name="resultVariable"></stringProp>
-            <stringProp name="variableNames"></stringProp>
-          </JDBCPreProcessor>
-          <hashTree/>
-          <JDBCPostProcessor guiclass="TestBeanGUI" testclass="JDBCPostProcessor" testname="JDBC後処理" enabled="true">
-            <stringProp name="dataSource"></stringProp>
-            <stringProp name="query"></stringProp>
-            <stringProp name="queryArguments"></stringProp>
-            <stringProp name="queryArgumentsTypes"></stringProp>
-            <stringProp name="queryTimeout"></stringProp>
-            <stringProp name="queryType">Select Statement</stringProp>
-            <stringProp name="resultSetHandler">Store as String</stringProp>
-            <stringProp name="resultVariable"></stringProp>
-            <stringProp name="variableNames"></stringProp>
-          </JDBCPostProcessor>
           <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="翻訳継続困難" enabled="true"/>
@@ -1507,6 +1554,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="HTML アサーション" enabled="true">
@@ -1538,6 +1586,7 @@
         <boolProp name="ProxyControlGui.regex_match">false</boolProp>
         <stringProp name="ProxyControlGui.content_type_include"></stringProp>
         <stringProp name="ProxyControlGui.content_type_exclude"></stringProp>
+        <stringProp name="ProxyControlGui.default_encoding">UTF-8</stringProp>
       </ProxyControl>
       <hashTree/>
       <HttpMirrorControl guiclass="HttpMirrorControlGui" testclass="HttpMirrorControl" testname="HTTPミラーサーバ" enabled="true">

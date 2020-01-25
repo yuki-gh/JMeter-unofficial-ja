@@ -19,12 +19,11 @@ Apache JMeterのGUIを日本語化します。
 
 ## プラットフォーム
 
-- Apache JMeter 5.1.1
+- Apache JMeter 5.2.1
 - Windows
-	- Windows 7 Pro x64 SP1 日本語版
-	- Windows 10 Home x64 1809 日本語版
-	- cygwin 3.0
-	- JDK 1.8.0_201
+	- Windows 10 Home x64 1909 日本語版
+	- cygwin 3.1
+	- JDK 1.8.0_241
 - macOS 10.14 Mojave
 - Linux
 	- Ubuntu 16.04 (WSL)
