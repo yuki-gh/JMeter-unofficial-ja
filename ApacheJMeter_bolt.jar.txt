@@ -1,0 +1,2 @@
+org/apache/jmeter/protocol/bolt/config,BoltConnectionElementResources
+org/apache/jmeter/protocol/bolt/sampler,BoltSamplerResources
