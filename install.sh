@@ -37,7 +37,7 @@ popd
 # install props
 
 IFS=,
-for f in *.jar.txt
+for f in ApacheJMeter_*.jar.txt
 do
 	TARGET_JAR=$JMETER_HOME/lib/ext/${f%.txt}
 	if [ -w $TARGET_JAR ]
