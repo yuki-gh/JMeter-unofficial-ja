@@ -1419,6 +1419,64 @@
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ツールチップ要翻訳" enabled="true"/>
         <hashTree>
+          <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC接続の構成" enabled="true">
+            <boolProp name="autocommit">true</boolProp>
+            <stringProp name="checkQuery"></stringProp>
+            <stringProp name="connectionAge">5000</stringProp>
+            <stringProp name="dataSource"></stringProp>
+            <stringProp name="dbUrl"></stringProp>
+            <stringProp name="driver"></stringProp>
+            <boolProp name="keepAlive">true</boolProp>
+            <stringProp name="password"></stringProp>
+            <stringProp name="poolMax">0</stringProp>
+            <stringProp name="timeout">10000</stringProp>
+            <stringProp name="transactionIsolation">DEFAULT</stringProp>
+            <stringProp name="trimInterval">60000</stringProp>
+            <stringProp name="username"></stringProp>
+            <stringProp name="initQuery"></stringProp>
+            <boolProp name="preinit">false</boolProp>
+            <stringProp name="connectionProperties"></stringProp>
+          </JDBCDataSource>
+          <hashTree/>
+          <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBCリクエスト" enabled="true">
+            <stringProp name="dataSource"></stringProp>
+            <stringProp name="query"></stringProp>
+            <stringProp name="queryArguments"></stringProp>
+            <stringProp name="queryArgumentsTypes"></stringProp>
+            <stringProp name="queryTimeout"></stringProp>
+            <stringProp name="queryType">Select Statement</stringProp>
+            <stringProp name="resultSetHandler">Store as String</stringProp>
+            <stringProp name="resultVariable"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="resultSetMaxRows"></stringProp>
+          </JDBCSampler>
+          <hashTree/>
+          <JDBCPreProcessor guiclass="TestBeanGUI" testclass="JDBCPreProcessor" testname="JDBC前処理" enabled="true">
+            <stringProp name="dataSource"></stringProp>
+            <stringProp name="query"></stringProp>
+            <stringProp name="queryArguments"></stringProp>
+            <stringProp name="queryArgumentsTypes"></stringProp>
+            <stringProp name="queryTimeout"></stringProp>
+            <stringProp name="queryType">Select Statement</stringProp>
+            <stringProp name="resultSetHandler">Store as String</stringProp>
+            <stringProp name="resultVariable"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="resultSetMaxRows"></stringProp>
+          </JDBCPreProcessor>
+          <hashTree/>
+          <JDBCPostProcessor guiclass="TestBeanGUI" testclass="JDBCPostProcessor" testname="JDBC後処理" enabled="true">
+            <stringProp name="dataSource"></stringProp>
+            <stringProp name="query"></stringProp>
+            <stringProp name="queryArguments"></stringProp>
+            <stringProp name="queryArgumentsTypes"></stringProp>
+            <stringProp name="queryTimeout"></stringProp>
+            <stringProp name="queryType">Select Statement</stringProp>
+            <stringProp name="resultSetHandler">Store as String</stringProp>
+            <stringProp name="resultVariable"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="resultSetMaxRows"></stringProp>
+          </JDBCPostProcessor>
+          <hashTree/>
           <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同期タイマー" enabled="true">
             <intProp name="groupSize">0</intProp>
             <longProp name="timeoutInMs">0</longProp>
@@ -1481,64 +1539,6 @@
             </doubleProp>
             <intProp name="throughputPeriod">3600</intProp>
           </PreciseThroughputTimer>
-          <hashTree/>
-          <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC接続の構成" enabled="true">
-            <boolProp name="autocommit">true</boolProp>
-            <stringProp name="checkQuery"></stringProp>
-            <stringProp name="connectionAge">5000</stringProp>
-            <stringProp name="dataSource"></stringProp>
-            <stringProp name="dbUrl"></stringProp>
-            <stringProp name="driver"></stringProp>
-            <boolProp name="keepAlive">true</boolProp>
-            <stringProp name="password"></stringProp>
-            <stringProp name="poolMax">0</stringProp>
-            <stringProp name="timeout">10000</stringProp>
-            <stringProp name="transactionIsolation">DEFAULT</stringProp>
-            <stringProp name="trimInterval">60000</stringProp>
-            <stringProp name="username"></stringProp>
-            <stringProp name="initQuery"></stringProp>
-            <boolProp name="preinit">false</boolProp>
-            <stringProp name="connectionProperties"></stringProp>
-          </JDBCDataSource>
-          <hashTree/>
-          <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBCリクエスト" enabled="true">
-            <stringProp name="dataSource"></stringProp>
-            <stringProp name="query"></stringProp>
-            <stringProp name="queryArguments"></stringProp>
-            <stringProp name="queryArgumentsTypes"></stringProp>
-            <stringProp name="queryTimeout"></stringProp>
-            <stringProp name="queryType">Select Statement</stringProp>
-            <stringProp name="resultSetHandler">Store as String</stringProp>
-            <stringProp name="resultVariable"></stringProp>
-            <stringProp name="variableNames"></stringProp>
-            <stringProp name="resultSetMaxRows"></stringProp>
-          </JDBCSampler>
-          <hashTree/>
-          <JDBCPreProcessor guiclass="TestBeanGUI" testclass="JDBCPreProcessor" testname="JDBC前処理" enabled="true">
-            <stringProp name="dataSource"></stringProp>
-            <stringProp name="query"></stringProp>
-            <stringProp name="queryArguments"></stringProp>
-            <stringProp name="queryArgumentsTypes"></stringProp>
-            <stringProp name="queryTimeout"></stringProp>
-            <stringProp name="queryType">Select Statement</stringProp>
-            <stringProp name="resultSetHandler">Store as String</stringProp>
-            <stringProp name="resultVariable"></stringProp>
-            <stringProp name="variableNames"></stringProp>
-            <stringProp name="resultSetMaxRows"></stringProp>
-          </JDBCPreProcessor>
-          <hashTree/>
-          <JDBCPostProcessor guiclass="TestBeanGUI" testclass="JDBCPostProcessor" testname="JDBC後処理" enabled="true">
-            <stringProp name="dataSource"></stringProp>
-            <stringProp name="query"></stringProp>
-            <stringProp name="queryArguments"></stringProp>
-            <stringProp name="queryArgumentsTypes"></stringProp>
-            <stringProp name="queryTimeout"></stringProp>
-            <stringProp name="queryType">Select Statement</stringProp>
-            <stringProp name="resultSetHandler">Store as String</stringProp>
-            <stringProp name="resultVariable"></stringProp>
-            <stringProp name="variableNames"></stringProp>
-            <stringProp name="resultSetMaxRows"></stringProp>
-          </JDBCPostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>
