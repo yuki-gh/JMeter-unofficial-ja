@@ -23,7 +23,8 @@ Apache JMeterのGUIを日本語化します。
 - Windows
 	- Windows 10 Home x64 1909 日本語版
 	- cygwin 3.1
-	- JDK 1.8.0_241
+	- Oracle JDK 8u241
+	- AdoptOpenJDK 8u222
 - macOS 10.14 Mojave
 - Linux
 	- Ubuntu 16.04 (WSL)
@@ -43,6 +44,8 @@ $JMETER_HOME/lib/ext/*.jarを書き換えるので注意してください。
 ### Windows
 
 ### macOS
+
+Homebrewでインストールした場合は「ツール」メニューの下にバグっているエントリがあります。
 
 ### Linux
 
