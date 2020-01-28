@@ -305,7 +305,7 @@
             <stringProp name="ConfigTestElement.password"></stringProp>
           </TCPSampler>
           <hashTree/>
-          <MailReaderSampler guiclass="MailReaderSamplerGui" testclass="MailReaderSampler" testname="メールリーダーサンプラ" enabled="true">
+          <MailReaderSampler guiclass="MailReaderSamplerGui" testclass="MailReaderSampler" testname="メールリーダサンプラ" enabled="true">
             <stringProp name="host_type">pop3</stringProp>
             <stringProp name="folder">INBOX</stringProp>
             <stringProp name="host"></stringProp>
@@ -1097,7 +1097,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <MailerResultCollector guiclass="MailerVisualizer" testclass="MailerResultCollector" testname="メーラービジュアライザ" enabled="true">
+          <MailerResultCollector guiclass="MailerVisualizer" testclass="MailerResultCollector" testname="メーラビジュアライザ" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
