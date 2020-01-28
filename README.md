@@ -29,10 +29,7 @@ Apache JMeterのGUIを日本語化します。
 - macOS 10.14 Mojave
 	- AdoptOpenJDK 8u222
 - Linux
-	- Ubuntu 18.04 LTS (WSL)
 	- Pengwin 11 bullseye (WSL)
-	- Debian 10 buster (WSL)
-	- Fedora Remix for WSL
 	- X410
 	- OpenJDK 8u242
 
@@ -57,7 +54,7 @@ Homebrewでインストールした5.2.1では、「ツール」メニューの�
 
 ### Linux
 
-Debian系の場合、aptでインストールされるJMeterは古いので、[公式サイト](https://jmeter.apache.org/download_jmeter.cgi)の最新版を展開してください。
+Debian系(Ubuntu/Pengwin)の場合、aptでインストールされるJMeterは古いので、[公式サイト](https://jmeter.apache.org/download_jmeter.cgi)の最新版を展開してください。
 
 install.shをsuやsudoで実行する場合、JMETER_HOMEが継承されない場合があります。
 
