@@ -7,7 +7,8 @@ cygwin)
 	export JMETER_HOME=`cygpath "$JMETER_HOME"`
 	;;
 darwin*)
-	#export JMETER_HOME=/usr/local/Cellar/jmeter/5.0/libexec
+	export JMETER_HOME=/usr/local/Cellar/jmeter/5.2.1/libexec
+	#export JMETER_HOME=/usr/local/apache-jmeter-5.2.1
 	;;
 linux*)
 	#export JMETER_HOME=/usr/local/jmeter
