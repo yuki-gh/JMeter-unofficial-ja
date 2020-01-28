@@ -40,7 +40,7 @@ Apache JMeterのGUIを日本語化します。
 zipが必要です。
 JMETER_HOMEの設定が必要です。
 
-JMeterのGUIを終了し、install.shを(必要に応じて管理者権限で)実行します。
+JMeterのGUIを終了し、install.shを(必要に応じて管理者権限で)実行してください。
 $JMETER_HOME/lib/ext/*.jarを書き換えるので注意してください。
 
 ### Windows
@@ -49,14 +49,17 @@ cygwinとdos2unixが必要です。
 
 ### macOS
 
-Homebrewでインストールした5.2.1では、「ツール」メニューの下にバグっているエントリがあり、翻訳されません。
-また、言語設定が保存されません。
+Homebrewでインストールした5.2.1では、以下の点に注意してください。
+
+- 「ツール」メニューの下にバグっているエントリがあり、翻訳されません。
+- 言語設定が保存されません。
+- 書き換えられる対象は$JMETER_HOME/libexec/lib/extとなります。
 
 ### Linux
 
 Debian系(Ubuntu/Pengwin)の場合、aptでインストールされるJMeterは古いので、[公式サイト](https://jmeter.apache.org/download_jmeter.cgi)の最新版を展開してください。
 
-install.shをsuやsudoで実行する場合、JMETER_HOMEが継承されない場合があります。
+install.shをsuやsudoで実行する場合、JMETER_HOMEが継承されるようにしてください。
 
 環境によっては日本語フォントのインストール・設定が必要です。
 
