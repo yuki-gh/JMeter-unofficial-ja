@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /bin/bash
 
 # set env
 
@@ -7,13 +7,18 @@ cygwin)
 	export JMETER_HOME=`cygpath "$JMETER_HOME"`
 	;;
 darwin*)
-	#export JMETER_HOME=/usr/local/Cellar/jmeter/5.2.1/libexec
-	export JMETER_HOME=/opt/apache-jmeter-5.2.1
+	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/usr/local/Cellar/jmeter/5.2.1/libexec
+	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter-5.2.1
 	;;
 linux*)
-	export JMETER_HOME=/opt/apache-jmeter-5.2.1
+	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter-5.2.1
 	;;
 esac
+if [ ! -d "$JMETER_HOME" ]
+then
+	echo "JMeter not found"
+	exit 1
+fi
 
 # check commands
 
@@ -22,6 +27,16 @@ then
 	echo "zip not found"
 	exit 1
 fi
+
+case "$OSTYPE" in
+cygwin)
+	if ! type dos2unix > /dev/null 2>&1
+	then
+		echo "dos2unix not found"
+		exit 1
+	fi
+	;;
+esac
 
 # backup
 
@@ -63,4 +78,8 @@ cp ja/templates.xml $JMETER_HOME/bin/templates
 # install setenv
 
 echo 'JMETER_LANGUAGE=-Duser.language="ja"' >> $JMETER_HOME/bin/setenv.sh
-echo 'set JMETER_LANGUAGE=-Duser.language="ja"' | unix2dos >> $JMETER_HOME/bin/setenv.bat
+case "$OSTYPE" in
+cygwin)
+	echo 'set JMETER_LANGUAGE=-Duser.language="ja"' | unix2dos >> $JMETER_HOME/bin/setenv.bat
+	;;
+esac
