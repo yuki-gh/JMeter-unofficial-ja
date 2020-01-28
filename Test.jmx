@@ -1521,7 +1521,7 @@
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="翻訳継続困難" enabled="true"/>
         <hashTree>
-          <JMSSampler guiclass="JMSSamplerGui" testclass="JMSSampler" testname="JMS Point-to-Point" enabled="true">
+          <JMSSampler guiclass="JMSSamplerGui" testclass="JMSSampler" testname="JMSポイントツーポイント" enabled="true">
             <stringProp name="JMSSampler.queueconnectionfactory"></stringProp>
             <stringProp name="JMSSampler.SendQueue"></stringProp>
             <stringProp name="JMSSampler.ReceiveQueue"></stringProp>
