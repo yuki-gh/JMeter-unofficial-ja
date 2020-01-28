@@ -22,11 +22,6 @@ then
 	echo "zip not found"
 	exit 1
 fi
-if ! type native2ascii > /dev/null 2>&1
-then
-	echo "native2ascii not found"
-	exit 1
-fi
 
 # backup
 
