@@ -7,11 +7,11 @@ cygwin)
 	export JMETER_HOME=`cygpath "$JMETER_HOME"`
 	;;
 darwin*)
-	export JMETER_HOME=/usr/local/Cellar/jmeter/5.2.1/libexec
-	#export JMETER_HOME=/usr/local/apache-jmeter-5.2.1
+	#export JMETER_HOME=/usr/local/Cellar/jmeter/5.2.1/libexec
+	export JMETER_HOME=/opt/apache-jmeter-5.2.1
 	;;
 linux*)
-	#export JMETER_HOME=/usr/local/jmeter
+	export JMETER_HOME=/opt/apache-jmeter-5.2.1
 	;;
 esac
 
@@ -43,18 +43,18 @@ do
 	TARGET_JAR=$JMETER_HOME/lib/ext/${f%.txt}
 	if [ -w $TARGET_JAR ]
 	then
-	rm -rf org
-	cat $f | while read l
-	do
-		set -- $l
-		path=$1
-		file=$2_ja.properties
-		mkdir -p $1
-		native2ascii -encoding utf8 ja/$file $path/$file
-		#echo zip -u $JMETER_HOME/lib/ext/${f%.txt} $path/$file
-	done
-	zip -u -r $TARGET_JAR org
-fi
+		rm -rf org
+		cat $f | while read l
+		do
+			set -- $l
+			path=$1
+			file=$2_ja.properties
+			mkdir -p $path
+			#native2ascii -encoding utf8 ja/$file $path/$file
+			cp ja.ascii/$file $path/$file
+		done
+		zip -u -r $TARGET_JAR org
+	fi
 done
 rm -rf org
 

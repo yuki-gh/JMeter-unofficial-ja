@@ -12,6 +12,7 @@ Apache JMeterのGUIを日本語化します。
 - en/templates.xml
 - install.sh
 - ja/*_ja.properties
+- ja.ascii/*_ja.properties
 - ja/templates.xml
 - Makefile
 - README.md
@@ -29,21 +30,25 @@ Apache JMeterのGUIを日本語化します。
 	- AdoptOpenJDK 8u222
 - Linux
 	- Ubuntu 18.04 LTS (WSL)
-	- Debian GNU/Linux 9 (Pengwin)
+	- Pengwin 11 bullseye (WSL)
+	- Debian 10 buster (WSL)
+	- Fedora Remix for WSL
 	- X410
-	- AdoptOpenJDK 8u242
+	- OpenJDK 8u242
 
 ## インストール
 
 ### 共通
 
-zipと、JDK(≦1.8)のnative2asciiが必要です。
+zipが必要です。
 JMETER_HOMEの設定が必要です。
 
 JMeterのGUIを終了し、install.shを(必要に応じて管理者権限で)実行します。
 $JMETER_HOME/lib/ext/*.jarを書き換えるので注意してください。
 
 ### Windows
+
+cygwinとdos2unixが必要です。
 
 ### macOS
 
@@ -52,11 +57,13 @@ Homebrewでインストールした5.2.1では、「ツール」メニューの�
 
 ### Linux
 
+Debian系の場合、aptでインストールされるJMeterは古いので、[公式サイト](https://jmeter.apache.org/download_jmeter.cgi)の最新版を展開してください。
+
+install.shをsuやsudoで実行する場合、JMETER_HOMEが継承されない場合があります。
+
 環境によっては日本語フォントのインストール・設定が必要です。
 
 ## 注意
-
-Debian系の場合、aptでインストールされるJMeterは古いので、[公式サイト](https://jmeter.apache.org/download_jmeter.cgi)の最新版を展開してください。
 
 以下のものは翻訳されません。
 
