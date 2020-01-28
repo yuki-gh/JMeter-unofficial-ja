@@ -6,7 +6,7 @@
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
-      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
@@ -54,7 +54,7 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="サンプラー" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="サンプラ" enabled="true"/>
         <hashTree>
           <BoltSampler guiclass="TestBeanGUI" testclass="BoltSampler" testname="Boltリクエスト" enabled="true">
             <stringProp name="cypher"></stringProp>
@@ -63,7 +63,7 @@
           </BoltSampler>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP リクエスト" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="HTTPSampler.domain"></stringProp>
@@ -81,8 +81,8 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree/>
-          <AjpSampler guiclass="AjpSamplerGui" testclass="AjpSampler" testname="AJP/1.3サンプラー" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+          <AjpSampler guiclass="AjpSamplerGui" testclass="AjpSampler" testname="AJP/1.3サンプラ" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="HTTPSampler.domain"></stringProp>
@@ -111,7 +111,7 @@
             <stringProp name="ConfigTestElement.password"></stringProp>
           </FTPSampler>
           <hashTree/>
-          <SubscriberSampler guiclass="JMSSubscriberGui" testclass="SubscriberSampler" testname="JMSサブスクライバー" enabled="true">
+          <SubscriberSampler guiclass="JMSSubscriberGui" testclass="SubscriberSampler" testname="JMSサブスクライバ" enabled="true">
             <stringProp name="jms.jndi_properties">false</stringProp>
             <stringProp name="jms.initial_context_factory"></stringProp>
             <stringProp name="jms.provider_url"></stringProp>
@@ -126,7 +126,7 @@
             <stringProp name="jms_error_reconnect_on_codes"></stringProp>
           </SubscriberSampler>
           <hashTree/>
-          <PublisherSampler guiclass="JMSPublisherGui" testclass="PublisherSampler" testname="JMSパブリッシャー" enabled="true">
+          <PublisherSampler guiclass="JMSPublisherGui" testclass="PublisherSampler" testname="JMSパブリッシャ" enabled="true">
             <stringProp name="jms.jndi_properties">false</stringProp>
             <stringProp name="jms.initial_context_factory"></stringProp>
             <stringProp name="jms.provider_url"></stringProp>
@@ -220,7 +220,7 @@
             <boolProp name="user_defined">false</boolProp>
             <stringProp name="test">add</stringProp>
             <stringProp name="base_entry_dn"></stringProp>
-            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="ConfigTestElement.username"></stringProp>
@@ -249,20 +249,20 @@
             <stringProp name="newdn"></stringProp>
           </LDAPExtSampler>
           <hashTree/>
-          <SystemSampler guiclass="SystemSamplerGui" testclass="SystemSampler" testname="OSプロセスサンプラー" enabled="true">
+          <SystemSampler guiclass="SystemSamplerGui" testclass="SystemSampler" testname="OSプロセスサンプラ" enabled="true">
             <boolProp name="SystemSampler.checkReturnCode">false</boolProp>
             <stringProp name="SystemSampler.expectedReturnCode">0</stringProp>
             <stringProp name="SystemSampler.command"></stringProp>
-            <elementProp name="SystemSampler.arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+            <elementProp name="SystemSampler.arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <elementProp name="SystemSampler.environment" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+            <elementProp name="SystemSampler.environment" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="SystemSampler.directory"></stringProp>
           </SystemSampler>
           <hashTree/>
-          <SmtpSampler guiclass="SmtpSamplerGui" testclass="SmtpSampler" testname="SMTPサンプラー" enabled="true">
+          <SmtpSampler guiclass="SmtpSamplerGui" testclass="SmtpSampler" testname="SMTPサンプラ" enabled="true">
             <stringProp name="SMTPSampler.server"></stringProp>
             <stringProp name="SMTPSampler.serverPort"></stringProp>
             <stringProp name="SMTPSampler.mailFrom"></stringProp>
@@ -293,7 +293,7 @@
             <collectionProp name="SMTPSampler.headerFields"/>
           </SmtpSampler>
           <hashTree/>
-          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="TCPサンプラー" enabled="true">
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="TCPサンプラ" enabled="true">
             <stringProp name="TCPSampler.server"></stringProp>
             <boolProp name="TCPSampler.reUseConnection">true</boolProp>
             <stringProp name="TCPSampler.port"></stringProp>
@@ -305,7 +305,7 @@
             <stringProp name="ConfigTestElement.password"></stringProp>
           </TCPSampler>
           <hashTree/>
-          <MailReaderSampler guiclass="MailReaderSamplerGui" testclass="MailReaderSampler" testname="メールリーダーサンプラー" enabled="true">
+          <MailReaderSampler guiclass="MailReaderSamplerGui" testclass="MailReaderSampler" testname="メールリーダーサンプラ" enabled="true">
             <stringProp name="host_type">pop3</stringProp>
             <stringProp name="folder">INBOX</stringProp>
             <stringProp name="host"></stringProp>
@@ -322,7 +322,7 @@
             <stringProp name="SMTPSampler.tlsProtocols"></stringProp>
           </MailReaderSampler>
           <hashTree/>
-          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="デバッグサンプラー" enabled="true">
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="デバッグサンプラ" enabled="true">
             <boolProp name="displayJMeterProperties">false</boolProp>
             <boolProp name="displayJMeterVariables">true</boolProp>
             <boolProp name="displaySystemProperties">false</boolProp>
@@ -334,7 +334,7 @@
             <stringProp name="ActionProcessor.duration">0</stringProp>
           </TestAction>
           <hashTree/>
-          <AccessLogSampler guiclass="TestBeanGUI" testclass="AccessLogSampler" testname="アクセスログサンプラー" enabled="true">
+          <AccessLogSampler guiclass="TestBeanGUI" testclass="AccessLogSampler" testname="アクセスログサンプラ" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -537,7 +537,7 @@
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="前処理" enabled="true"/>
         <hashTree>
-          <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="ユーザーパラメータ" enabled="true">
+          <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="ユーザパラメータ" enabled="true">
             <collectionProp name="UserParameters.names"/>
             <collectionProp name="UserParameters.thread_values">
               <collectionProp name="1"/>
@@ -560,7 +560,7 @@
             <stringProp name="InterruptTimer.timeout">10000</stringProp>
           </SampleTimeout>
           <hashTree/>
-          <RegExUserParameters guiclass="RegExUserParametersGui" testclass="RegExUserParameters" testname="正規表現ユーザーパラメータ" enabled="true">
+          <RegExUserParameters guiclass="RegExUserParametersGui" testclass="RegExUserParameters" testname="正規表現ユーザパラメータ" enabled="true">
             <stringProp name="RegExUserParameters.regex_ref_name"></stringProp>
             <stringProp name="RegExUserParameters.param_names_gr_nr"></stringProp>
             <stringProp name="RegExUserParameters.param_values_gr_nr"></stringProp>
@@ -675,7 +675,7 @@
           </AuthManager>
           <hashTree/>
           <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP リクエスト初期値設定" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="HTTPSampler.domain"></stringProp>
@@ -758,7 +758,7 @@
             <stringProp name="newdn"></stringProp>
             <stringProp name="test">add</stringProp>
             <stringProp name="base_entry_dn"></stringProp>
-            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
           </ConfigTestElement>
@@ -770,12 +770,12 @@
             <boolProp name="user_defined">false</boolProp>
             <stringProp name="test">modify</stringProp>
             <stringProp name="base_entry_dn"></stringProp>
-            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
           </ConfigTestElement>
           <hashTree/>
-          <ConfigTestElement guiclass="TCPConfigGui" testclass="ConfigTestElement" testname="TCPサンプラー設定" enabled="true">
+          <ConfigTestElement guiclass="TCPConfigGui" testclass="ConfigTestElement" testname="TCPサンプラ設定" enabled="true">
             <stringProp name="TCPSampler.server"></stringProp>
             <boolProp name="TCPSampler.reUseConnection">true</boolProp>
             <stringProp name="TCPSampler.port"></stringProp>
@@ -796,7 +796,7 @@
           <hashTree/>
           <ConfigTestElement guiclass="SimpleConfigGui" testclass="ConfigTestElement" testname="シンプル設定エレメント" enabled="true"/>
           <hashTree/>
-          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </Arguments>
           <hashTree/>
@@ -830,7 +830,7 @@
           </DNSCacheManager>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="リスナー" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="リスナ" enabled="true"/>
         <hashTree>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="結果をツリーで表示" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
@@ -943,7 +943,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="バックエンドリスナー" enabled="true">
+          <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="バックエンドリスナ" enabled="true">
             <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="graphiteMetricsSender" elementType="Argument">
@@ -1328,7 +1328,7 @@
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223PostProcessor>
           <hashTree/>
-          <JSR223Timer guiclass="TestBeanGUI" testclass="JSR223Timer" testname="JSR223タイマー" enabled="true">
+          <JSR223Timer guiclass="TestBeanGUI" testclass="JSR223Timer" testname="JSR223タイマ" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
@@ -1336,7 +1336,7 @@
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223Timer>
           <hashTree/>
-          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223サンプラー" enabled="true">
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223サンプラ" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
@@ -1344,7 +1344,7 @@
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223Sampler>
           <hashTree/>
-          <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223リスナー" enabled="true">
+          <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223リスナ" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
@@ -1355,7 +1355,7 @@
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="BeanShell" enabled="true"/>
         <hashTree>
-          <BeanShellTimer guiclass="TestBeanGUI" testclass="BeanShellTimer" testname="BeanShellタイマー" enabled="true">
+          <BeanShellTimer guiclass="TestBeanGUI" testclass="BeanShellTimer" testname="BeanShellタイマ" enabled="true">
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
             <boolProp name="resetInterpreter">false</boolProp>
@@ -1376,14 +1376,14 @@
             <stringProp name="script"></stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
-          <BeanShellListener guiclass="TestBeanGUI" testclass="BeanShellListener" testname="BeanShellリスナー" enabled="true">
+          <BeanShellListener guiclass="TestBeanGUI" testclass="BeanShellListener" testname="BeanShellリスナ" enabled="true">
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="script"></stringProp>
           </BeanShellListener>
           <hashTree/>
-          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShellサンプラー" enabled="true">
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShellサンプラ" enabled="true">
             <stringProp name="BeanShellSampler.query"></stringProp>
             <stringProp name="BeanShellSampler.filename"></stringProp>
             <stringProp name="BeanShellSampler.parameters"></stringProp>
@@ -1416,7 +1416,27 @@
       </ThreadGroup>
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ラベル要翻訳" enabled="true"/>
-        <hashTree/>
+        <hashTree>
+          <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="高精度スループットタイマ" enabled="true">
+            <doubleProp>
+              <name>allowedThroughputSurplus</name>
+              <value>1.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="batchSize">1</intProp>
+            <intProp name="batchThreadDelay">0</intProp>
+            <longProp name="duration">3600</longProp>
+            <intProp name="exactLimit">10000</intProp>
+            <longProp name="randomSeed">0</longProp>
+            <doubleProp>
+              <name>throughput</name>
+              <value>100.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="throughputPeriod">3600</intProp>
+          </PreciseThroughputTimer>
+          <hashTree/>
+        </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ツールチップ要翻訳" enabled="true"/>
         <hashTree>
           <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC接続の構成" enabled="true">
@@ -1477,7 +1497,7 @@
             <stringProp name="resultSetMaxRows"></stringProp>
           </JDBCPostProcessor>
           <hashTree/>
-          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同期タイマー" enabled="true">
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同期タイマ" enabled="true">
             <intProp name="groupSize">0</intProp>
             <longProp name="timeoutInMs">0</longProp>
           </SyncTimer>
@@ -1513,32 +1533,13 @@
             <stringProp name="HTTPSamper.xml_data"></stringProp>
             <stringProp name="JMSSampler.initialContextFactory"></stringProp>
             <stringProp name="JMSSampler.contextProviderUrl"></stringProp>
-            <elementProp name="JMSSampler.jndiProperties" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザー定義変数" enabled="true">
+            <elementProp name="JMSSampler.jndiProperties" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="ユーザ定義変数" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <elementProp name="arguments" elementType="JMSProperties">
               <collectionProp name="JMSProperties.properties"/>
             </elementProp>
           </JMSSampler>
-          <hashTree/>
-          <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="高精度スループットタイマー" enabled="true">
-            <doubleProp>
-              <name>allowedThroughputSurplus</name>
-              <value>1.0</value>
-              <savedValue>0.0</savedValue>
-            </doubleProp>
-            <intProp name="batchSize">1</intProp>
-            <intProp name="batchThreadDelay">0</intProp>
-            <longProp name="duration">3600</longProp>
-            <intProp name="exactLimit">10000</intProp>
-            <longProp name="randomSeed">0</longProp>
-            <doubleProp>
-              <name>throughput</name>
-              <value>100.0</value>
-              <savedValue>0.0</savedValue>
-            </doubleProp>
-            <intProp name="throughputPeriod">3600</intProp>
-          </PreciseThroughputTimer>
           <hashTree/>
         </hashTree>
       </hashTree>

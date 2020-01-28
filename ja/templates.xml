@@ -89,26 +89,26 @@
         ]]></description>
     </template>
     <template isTestPlan="false">
-        <name>Groovyを用いたJSR223サンプラー</name>
+        <name>Groovyを用いたJSR223サンプラ</name>
         <fileName>GroovyJSR223Sampler.jmx</fileName>
         <description><![CDATA[
-        <h1>Groovyを用いたJSR223サンプラーの例</h1>
+        <h1>Groovyを用いたJSR223サンプラの例</h1>
         <h2>概要</h2>
         This is a sample JSR223 sampler which shows how to use some of its features with Apache Groovy language
         <br/>
         マージする前にツリー内の適切な場所を選択してください。
         <h2>参考リンク</h2>
             <ul>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#JSR223_Sampler" >JSR223サンプラー</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#JSR223_Sampler" >JSR223サンプラ</a></li>
                 <li><a href="http://groovy-lang.org/documentation.html" >Apache Groovy</a></li>
             </ul>
         ]]></description>
     </template>
     <template isTestPlan="false">
-        <name>BeanShellサンプラー</name>
+        <name>BeanShellサンプラ</name>
         <fileName>BeanShellSampler.jmx</fileName>
         <description><![CDATA[
-        <h1>BeanShellサンプラーの例</h1>
+        <h1>BeanShellサンプラの例</h1>
         <h2>概要</h2>
         This is a sample BeanShell sampler which shows how to use some of its features.
         <br/>
@@ -146,7 +146,7 @@
         <name>ウェブのテスト計画を構築</name>
         <fileName>/bin/templates/build-web-test-plan.jmx</fileName>
         <description><![CDATA[
-        <h1>ユーザーズマニュアルの「ウェブのテスト計画を構築」節からのテスト計画</h1>
+        <h1>ユーザズマニュアルの「ウェブのテスト計画を構築」節からのテスト計画</h1>
         <h2>参考リンク</h2>
             <ul>
                 <li><a href="http://jmeter.apache.org/usermanual/build-web-test-plan.html" >http://jmeter.apache.org/usermanual/build-web-test-plan.html</a></li>
@@ -157,7 +157,7 @@
         <name>高度なウェブのテスト計画を構築</name>
         <fileName>/bin/templates/build-adv-web-test-plan.jmx</fileName>
         <description><![CDATA[
-        <h1>ユーザーズマニュアルの「高度なウェブのテスト計画を構築」節からのテスト計画</h1>
+        <h1>ユーザズマニュアルの「高度なウェブのテスト計画を構築」節からのテスト計画</h1>
         <h2>構成</h2>
         <p>In order to run the login sample inside plan, create a CSV file following description in <b>loginData</b> sample and put it in a folder of your choice then test running JMeter with:<br/>
             <ul>
@@ -177,7 +177,7 @@
         <h1>SOAPウェブサービスのテスト計画を作成する方法を示すテスト計画</h1>
         <h2>参考リンク</h2>
             <ul>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#User_Defined_Variables" >ユーザー定義変数</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#User_Defined_Variables" >ユーザ定義変数</a></li>
                 <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request_Defaults" >HTTPリクエスト初期値設定</a></li>
                 <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request" >HTTPリクエスト</a></li>
                 <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Response_Assertion">応答アサーション</a></li>
@@ -189,7 +189,7 @@
         <name>FTPのテスト計画を構築</name>
         <fileName>/bin/templates/build-ftp-test-plan.jmx</fileName>
         <description><![CDATA[
-        <h1>ユーザーズマニュアルの「FTPのテスト計画を構築」節からのテスト計画</h1>
+        <h1>ユーザズマニュアルの「FTPのテスト計画を構築」節からのテスト計画</h1>
         <h2>参考リンク</h2>
             <ul>
                 <li><a href="http://jmeter.apache.org/usermanual/build-ftp-test-plan.html" >http://jmeter.apache.org/usermanual/build-ftp-test-plan.html</a></li>
@@ -200,7 +200,7 @@
         <name>LDAPのテスト計画を構築</name>
         <fileName>/bin/templates/build-ldap-test-plan.jmx</fileName>
         <description><![CDATA[
-        <h1>ユーザーズマニュアルの「LDAPのテスト計画を構築」節からのテスト計画</h1>
+        <h1>ユーザズマニュアルの「LDAPのテスト計画を構築」節からのテスト計画</h1>
         <h2>参考リンク</h2>
             <ul>
                 <li><a href="http://jmeter.apache.org/usermanual/build-ldap-test-plan.html" >http://jmeter.apache.org/usermanual/build-ldap-test-plan.html</a></li>
@@ -211,7 +211,7 @@
         <name>拡張LDAPのテスト計画を構築</name>
         <fileName>/bin/templates/build-ldap-ext-test-plan.jmx</fileName>
         <description><![CDATA[
-        <h1>ユーザーズマニュアルの「拡張LDAPのテスト計画を構築」節からのテスト計画</h1>
+        <h1>ユーザズマニュアルの「拡張LDAPのテスト計画を構築」節からのテスト計画</h1>
         <h2>参考リンク</h2>
             <ul>
                 <li><a href="http://jmeter.apache.org/usermanual/build-ldapext-test-plan.html" >http://jmeter.apache.org/usermanual/build-ldapext-test-plan.html</a></li>
@@ -222,7 +222,7 @@
         <name>ある時点での考慮時間</name>
         <fileName>ThinkTime.jmx</fileName>
         <description><![CDATA[
-        <h1>2つのサンプラーの間の考慮時間</h1>
+        <h1>2つのサンプラの間の考慮時間</h1>
         <h2>概要</h2>
         This shows how to introduce a Think Time of 1s+/- 100 ms between 2 samplers 
         <br/>
@@ -230,7 +230,7 @@
         <h2>参考リンク</h2>
             <ul>
                 <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Test_Action" >テストアクション</a></li>
-                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Uniform_Random_Timer" >一様乱数タイマー</a></li>
+                <li><a href="http://jmeter.apache.org/usermanual/component_reference.html#Uniform_Random_Timer" >一様乱数タイマ</a></li>
             </ul>
         ]]></description>
     </template>
