@@ -829,6 +829,15 @@
             <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
           </DNSCacheManager>
           <hashTree/>
+          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="乱数変数" enabled="true">
+            <stringProp name="variableName"></stringProp>
+            <stringProp name="outputFormat"></stringProp>
+            <stringProp name="minimumValue">1</stringProp>
+            <stringProp name="maximumValue"></stringProp>
+            <stringProp name="randomSeed"></stringProp>
+            <boolProp name="perThread">false</boolProp>
+          </RandomVariableConfig>
+          <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="リスナ" enabled="true"/>
         <hashTree>
@@ -1508,15 +1517,6 @@
             <stringProp name="startIndex"></stringProp>
             <stringProp name="endIndex"></stringProp>
           </KeystoreConfig>
-          <hashTree/>
-          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="乱数変数" enabled="true">
-            <stringProp name="variableName"></stringProp>
-            <stringProp name="outputFormat"></stringProp>
-            <stringProp name="minimumValue">1</stringProp>
-            <stringProp name="maximumValue"></stringProp>
-            <stringProp name="randomSeed"></stringProp>
-            <boolProp name="perThread">false</boolProp>
-          </RandomVariableConfig>
           <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="翻訳継続困難" enabled="true"/>
