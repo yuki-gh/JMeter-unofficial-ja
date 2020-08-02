@@ -2,16 +2,18 @@
 
 # set env
 
+JMETER_VER=5.3
+
 case "$OSTYPE" in
 cygwin)
 	export JMETER_HOME=`cygpath "$JMETER_HOME"`
 	;;
 darwin*)
-	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/usr/local/Cellar/jmeter/5.2.1/libexec
-	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter-5.2.1
+	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/usr/local/Cellar/jmeter/$JMETER_VER/libexec
+	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter-$JMETER_VER
 	;;
 linux*)
-	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter-5.2.1
+	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter-$JMETER_VER
 	;;
 esac
 if [ ! -d "$JMETER_HOME" ]

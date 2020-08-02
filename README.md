@@ -20,13 +20,12 @@ Apache JMeterのGUIを日本語化します。
 
 ## プラットフォーム
 
-- Apache JMeter 5.2.1
+- Apache JMeter 5.3
 - Windows
 	- Windows 10 Home x64 1909 日本語版
 	- cygwin 3.1
-	- Oracle JDK 8u241
 	- AdoptOpenJDK 8u242
-- macOS 10.14 Mojave
+- macOS 10.15 Catalina
 	- AdoptOpenJDK 8u222
 - Linux
 	- Pengwin 11 bullseye (WSL)
@@ -49,7 +48,7 @@ cygwinとdos2unixが必要です。
 
 ### macOS
 
-Homebrewでインストールした5.2.1では、以下の点に注意してください。
+Homebrewでインストールした5.3では、以下の点に注意してください。
 
 - 「ツール」メニューの下にバグっているエントリがあり、翻訳されません。
 - 言語設定が保存されません。
