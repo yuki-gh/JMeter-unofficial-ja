@@ -1,3 +1,4 @@
+#! /usr/bin/ruby
 
 in1=open(ARGV[0], "r")
 in2=open(ARGV[1], "r")
