@@ -6,5 +6,8 @@ all:
 install:
 	/usr/bin/bash install.sh
 
+extract:
+	/usr/bin/bash extract.sh
+
 clean:
 	rm -rf org
