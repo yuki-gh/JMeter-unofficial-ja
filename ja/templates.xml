@@ -27,13 +27,13 @@
         <h1>記録の方法を示すテンプレート</h1>
         <h2>JMeterの構成</h2>
             <ul>
-                <li>JMeter Server Proxy port is set to 8888, you may want to change this</li>
+                <li>JMeterサーバプロキシポートは8888に設定され、必要に応じて変更可能です。</li>
             </ul>
         <h2>ブラウザの構成</h2>
-        <p>Configure your browser so that it uses the JMeter proxy, set:
+        <p>ブラウザがJMeterのプロキシを使うよう構成してください。
             <ul>
-                <li>the host of the machine that runs JMeter</li>
-                <li>the port you setup in JMeter Server Proxy</li>
+                <li>JMeterを実行するマシンのホスト名</li>
+                <li>JMeterサーバプロキシで設定したポート番号</li>
             </ul>
         </p>
         <h2>参考リンク</h2>
@@ -55,13 +55,13 @@
         <h1>考慮時間つきで記録する方法を示すテンプレート</h1>
         <h2>JMeterの構成</h2>
             <ul>
-                <li>JMeter Server Proxy port is set to 8888, you may want to change this</li>
+                <li>JMeterサーバプロキシポートは8888に設定され、必要に応じて変更可能です。</li>
             </ul>
         <h2>ブラウザの構成</h2>
-        <p>Configure your browser so that it uses the JMeter proxy, set:
+        <p>ブラウザがJMeterのプロキシを使うよう構成してください。
             <ul>
-                <li>the host of the machine that runs JMeter</li>
-                <li>the port you setup in JMeter Server Proxy</li>
+                <li>JMeterを実行するマシンのホスト名</li>
+                <li>JMeterサーバプロキシで設定したポート番号</li>
             </ul>
         </p>
         <h2>参考リンク</h2>
@@ -78,9 +78,9 @@
         <![CDATA[<h1>データベースのSQLクエリを負荷試験する方法を示すテンプレート</h1>
         <h2>JMeterの構成</h2>
             <ul>
-                <li>Add the database driver to jmeter/lib folder</li>
-                <li>Configure the host, port, username and password in JDBC Configuration</li>
-                <li>Modify the SQL query to match your query</li>
+                <li>データベースドライバを jmeter/lib フォルダに追加</li>
+                <li>JDBC構成でホスト、ポート、ユーザ名、パスワードを設定</li>
+                <li>あなたのクエリにマッチするようSQLクエリを修正</li>
             </ul>
         <h2>参考リンク</h2>
             <ul>
@@ -94,7 +94,7 @@
         <description><![CDATA[
         <h1>Groovyを用いたJSR223サンプラの例</h1>
         <h2>概要</h2>
-        This is a sample JSR223 sampler which shows how to use some of its features with Apache Groovy language
+        JSR223サンプラの機能をApache Groovy言語で利用する方法を示した例です。
         <br/>
         マージする前にツリー内の適切な場所を選択してください。
         <h2>参考リンク</h2>
@@ -110,7 +110,7 @@
         <description><![CDATA[
         <h1>BeanShellサンプラの例</h1>
         <h2>概要</h2>
-        This is a sample BeanShell sampler which shows how to use some of its features.
+        BeanShellサンプラの機能を利用する方法を示した例です。
         <br/>
         マージする前にツリー内の適切な場所を選択してください。
         <h2>参考リンク</h2>
@@ -126,13 +126,13 @@
         <![CDATA[<h1>MongoDB Javaドライバを用いてMongoDBコードを負荷試験する方法を示すテンプレート</h1>
         <h2>JMeterの構成</h2>
             <ul>
-                <li>Configure the <b>Server address list</b>, and tune <b>MongoDB options</b> in MongoDB Source Config</li>
-                <li>Modify the JSR223 samples (<b>Insert into testCollection</b> and <b>Count from testCollection</b>) to match your needs</li>
+                <li>MongoDB Source Configで<b>Server Address List</b>を構成し、<b>MongoDB Options</b>をチューニングします。</li>
+                <li>ニーズに応じてJSR223サンプル(<b>Insert into testCollection</b> および <b>Count from testCollection</b>)を修正します。</li>
             </ul>
         <h2>Mongo Javaドライバ</h2>
         <p>
-            MongoDB Source Config configures the connection to MongoDB for you and stores in <b>MongoDB Source</b> the configuration.<br/>
-            You can then access it in any Scripting element using:<br/>
+            MongoDB Source ConfigはMongoDBの接続を構成し、構成を<b>MongoDB Source</b>に保存します。<br/>
+            任意のスクリプティング要素で以下のようにしてアクセス可能です。<br/>
             <i>com.mongodb.DB db = org.apache.jmeter.protocol.mongodb.config.MongoDBHolder.getDBFromSource("db", "test");<i>
         </p>
         <h2>参考リンク</h2>
@@ -158,9 +158,9 @@
         <fileName>/bin/templates/functional-testing-01-test-plan.jmx</fileName>
         <description><![CDATA[
         <h1>機能テストのテスト計画 [01] を構築</h1>
-		<p>You can use JMeter to automate API Testing</p>
-		<p>This template of Test Plan contains first step when starting creating JMeter script</p>
-        <h2>Useful links</h2>
+		<p>JMeterを使ってAPIテストを自動化できます。</p>
+		<p>このテスト計画のテンプレートは、JMeterスクリプトを作成する際の第一歩を含みます。</p>
+        <h2>参考リンク</h2>
             <ul>
                 <li><a href="https://jmeter.apache.org/usermanual/test_plan.html" >https://jmeter.apache.org/usermanual/test_plan.html</a></li>
 				<li><a href="https://jmeter.apache.org/usermanual/listeners.html" >https://jmeter.apache.org/usermanual/listeners.html</a></li>
@@ -175,9 +175,9 @@
         <description><![CDATA[
         <h1>ユーザーズマニュアルの「高度なウェブのテスト計画を構築」節からのテスト計画</h1>
         <h2>構成</h2>
-        <p>In order to run the login sample inside plan, create a CSV file following description in <b>loginData</b> sample and put it in a folder of your choice then test running JMeter with:<br/>
+        <p>テスト計画内のログインの例を時刻するには、<b>loginData</b>サンプルの説明に従ってCSVファイルを作成し、任意のフォルダに置き、JMeterを以下のように実行します。<br/>
             <ul>
-                <li><b>jmeter -Jresources_folder=FOLDER TO CHANGE</b></li>
+                <li><b>jmeter -Jresources_folder=フォルダ名</b></li>
             </ul>
         </p>
         <h2>参考リンク</h2>
@@ -240,7 +240,7 @@
         <description><![CDATA[
         <h1>2つのサンプラの間の考慮時間</h1>
         <h2>概要</h2>
-        This shows how to introduce a Think Time of 1s+/- 100 ms between 2 samplers 
+        2つのサンプラの間に1秒±100ミリ秒の考慮時間を導入する方法を示します。
         <br/>
         マージする前にツリー内の適切な場所(例 スレッドグループまたはコントローラ)を選択してください。
         <h2>参考リンク</h2>
