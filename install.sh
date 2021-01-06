@@ -2,7 +2,7 @@
 
 # set env
 
-JMETER_VER=5.4.1
+JMETER_VER=5.4.1-SNAPSHOT
 
 case "$OSTYPE" in
 cygwin)
@@ -79,7 +79,11 @@ cp ja/templates.xml $JMETER_HOME/bin/templates
 
 # install setenv
 
-echo 'JMETER_LANGUAGE=-Duser.language="ja"' >> $JMETER_HOME/bin/setenv.sh
+cat >> $JMETER_HOME/bin/setenv.sh << END
+JMETER_LANGUAGE=-Duser.language="ja"
+JMETER_OPTS=-Djavax.accessibility.assistive_technologies=java.lang.Object
+END
+
 case "$OSTYPE" in
 cygwin)
 	echo 'set JMETER_LANGUAGE=-Duser.language="ja"' | unix2dos >> $JMETER_HOME/bin/setenv.bat
