@@ -20,17 +20,17 @@ Apache JMeterのGUIを日本語化します。
 
 ## プラットフォーム
 
-- Apache JMeter 5.3
+- Apache JMeter 5.4.1-SNAPSHOT
 - Windows
 	- Windows 10 Home x64 1909 日本語版
 	- cygwin 3.1
-	- AdoptOpenJDK 8u242
+	- AdoptOpenJDK 8
 - macOS 10.15 Catalina
-	- AdoptOpenJDK 8u222
-- Linux
-	- Pengwin 11 bullseye (WSL)
+	- AdoptOpenJDK 8
+- Linux (すべてWSL)
+	- Pengwin 11 bullseye, Debian 10 buster, Ubuntu 20.04, Fedora Remix 31
 	- X410
-	- OpenJDK 8u242
+	- OpenJDK 8
 
 ## インストール
 
@@ -67,7 +67,7 @@ install.shをsuやsudoで実行する場合、JMETER_HOMEが継承されるよ�
 以下のものは翻訳されません。
 
 - HTML Assertion
-- テンプレートの内容
+- テンプレートに含まれるテスト計画のコメント等
 - DEPRECATEDなプラグイン
 - CLI
 
