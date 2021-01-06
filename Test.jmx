@@ -402,7 +402,7 @@
             <boolProp name="ForeachController.useSeparator">true</boolProp>
           </ForeachController>
           <hashTree/>
-          <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime コントローラ" enabled="true">
+          <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="実行時間コントローラ" enabled="true">
             <stringProp name="RunTime.seconds">1</stringProp>
           </RunTime>
           <hashTree/>
