@@ -30,14 +30,14 @@ Apache JMeterのGUIを日本語化します。
 - Linux (すべてWSL)
 	- Pengwin 11 bullseye, Debian 10 buster, Ubuntu 20.04, Fedora Remix 31
 	- X410
-	- OpenJDK 8
+	- OpenJDK 11
 
 ## インストール
 
 ### 共通
 
 zipが必要です。
-JMETER_HOMEの設定が必要です。
+JMETER_HOMEの設定が必要です(JMeterの実行時にはJMETER_HOMEおよびJAVA_HOMEの設定は必要ありません)。
 
 JMeterのGUIを終了し、install.shを(必要に応じて管理者権限で)実行してください。
 $JMETER_HOME/lib/ext/*.jarを書き換えるので注意してください。
@@ -76,6 +76,10 @@ install.shをsuやsudoで実行する場合、JMETER_HOMEが継承されるよ�
 翻訳が反映されない箇所があります。
 
 語末の長音符は原則省略しています。
+
+templates.xmlのname要素の内容は3文字以上なければなりません。
+
+.propertiesファイルを\uエンコーディングするのに必要なnative2asciiはJDK 9以降には含まれません。
 
 ## 免責
 

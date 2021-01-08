@@ -21,7 +21,7 @@
 <!DOCTYPE templates SYSTEM "templates.dtd">
 <templates>
     <template isTestPlan="true">
-        <name>記録</name>
+        <name>シンプルな記録</name>
         <fileName>/bin/templates/recording.jmx</fileName>
         <description><![CDATA[
         <h1>記録の方法を示すテンプレート</h1>
