@@ -9,11 +9,12 @@ cygwin)
 	export JMETER_HOME=`cygpath "$JMETER_HOME"`
 	;;
 darwin*)
-	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/usr/local/Cellar/jmeter/$JMETER_VER/libexec
 	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter-$JMETER_VER
+	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter
 	;;
 linux*)
 	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter-$JMETER_VER
+	[ -d "$JMETER_HOME" ] || export JMETER_HOME=/opt/apache-jmeter
 	;;
 esac
 if [ ! -d "$JMETER_HOME" ]
