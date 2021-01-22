@@ -5,19 +5,6 @@
 
 Apache JMeterのGUIを日本語化します。
 
-## 内容
-
-- ApacheJMeter_*.jar.txt
-- en/*.properties
-- en/templates.xml
-- install.sh
-- ja/*_ja.properties
-- ja.ascii/*_ja.properties
-- ja/templates.xml
-- Makefile
-- README.md
-- Test.jmx
-
 ## プラットフォーム
 
 - Apache JMeter 5.4.1-SNAPSHOT
@@ -32,54 +19,54 @@ Apache JMeterのGUIを日本語化します。
 	- X410
 	- OpenJDK 11
 
+JMeter 5.4は.jmxファイルを読めないバグがあるので対応しません。
+5.3または5.4.1以降を使ってください。
+
 ## インストール
 
 ### 共通
 
-zipが必要です。
-JMETER_HOMEの設定が必要です(JMeterの実行時にはJMETER_HOMEおよびJAVA_HOMEの設定は必要ありません)。
+zipコマンドが必要です。
+
+JMeterは[公式サイト](https://jmeter.apache.org/download_jmeter.cgi)のものを展開してください。
+Chocolatey/Homebrew/apt/dnfなどでインストールされるものは、古かったり問題がある場合があります。
 
 JMeterのGUIを終了し、install.shを(必要に応じて管理者権限で)実行してください。
 $JMETER_HOME/lib/ext/*.jarを書き換えるので注意してください。
 
+JMeterの実行時にはJMETER_HOMEおよびJAVA_HOMEの設定は必要ありません。
+
 ### Windows
 
-cygwinとdos2unixが必要です。
+- cygwinとdos2unixが必要です。
+- install.shの実行にはJMETER_HOMEの設定が必要です。
 
 ### macOS
 
-Homebrewでインストールした5.3では、以下の点に注意してください。
-
-- 「ツール」メニューの下にバグっているエントリがあり、翻訳されません。
-- 言語設定が保存されません。
-- 書き換えられる対象は$JMETER_HOME/libexec/lib/extとなります。
+- JMeterを/optに展開している場合は、install.shの実行にJMETER_HOMEの設定は不要です。
+- install.shをsuやsudoで実行する場合、必要に応じてJMETER_HOMEが継承されるようにしてください。
 
 ### Linux
 
-Debian系(Ubuntu/Pengwin)の場合、aptでインストールされるJMeterは古いので、[公式サイト](https://jmeter.apache.org/download_jmeter.cgi)の最新版を展開してください。
-
-install.shをsuやsudoで実行する場合、JMETER_HOMEが継承されるようにしてください。
-
-環境によっては日本語フォントのインストール・設定が必要です。
+- 環境によっては日本語フォントのインストール・設定が必要です。
+- JMeterを/optに展開している場合は、install.shの実行にJMETER_HOMEの設定は不要です。
+- install.shをsuやsudoで実行する場合、必要に応じてJMETER_HOMEが継承されるようにしてください。
 
 ## 注意
 
-以下のものは翻訳されません。
+- 以下のものは翻訳されません。
+  - HTML Assertion
+  - テンプレートに含まれるテスト計画のコメント等
+  - DEPRECATEDなプラグイン
+  - CLI関連、起動時のコンソール出力
+- 表示されているキーボードショートカットが機能しない箇所があります。
+- 翻訳が反映されない箇所があります。
+- 語末の長音符は原則省略しています。
 
-- HTML Assertion
-- テンプレートに含まれるテスト計画のコメント等
-- DEPRECATEDなプラグイン
-- CLI
+編集する場合は以下の点に注意してください。
 
-表示されているキーボードショートカットが機能しない箇所があります。
-
-翻訳が反映されない箇所があります。
-
-語末の長音符は原則省略しています。
-
-templates.xmlのname要素の内容は3文字以上なければなりません。
-
-.propertiesファイルを\uエンコーディングするのに必要なnative2asciiはJDK 9以降には含まれません。
+- .propertiesファイルを\uエンコーディングするのに必要なnative2asciiはJDK 9以降には含まれません。
+- templates.xmlのname要素の内容は3文字以上なければなりません。
 
 ## 免責
 
