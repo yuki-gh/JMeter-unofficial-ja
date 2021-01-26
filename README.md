@@ -7,7 +7,7 @@ Apache JMeterのGUIを日本語化します。
 
 ## プラットフォーム
 
-- Apache JMeter 5.4.1-SNAPSHOT
+- Apache JMeter 5.4.1
 - Windows
 	- Windows 10 Home x64 1909 日本語版
 	- cygwin 3.1
