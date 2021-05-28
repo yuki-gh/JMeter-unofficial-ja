@@ -9,15 +9,15 @@ Apache JMeterのGUIを日本語化します。
 
 - Apache JMeter 5.4.1
 - Windows
-	- Windows 10 Home x64 1909 日本語版
-	- cygwin 3.1
+	- Windows 10 Home x64 21H1 日本語版
+	- Cygwin 3.2
+	- Oracle JRE 8
+	- Microsoft OpenJDK 11
 	- AdoptOpenJDK 8
-- macOS 10.15 Catalina
+- macOS
+	- macOS Big Sur 11.4
+	- Oracle JRE 8
 	- AdoptOpenJDK 8
-- Linux (すべてWSL)
-	- Pengwin 11 bullseye, Debian 10 buster, Ubuntu 20.04, Fedora Remix 31
-	- X410
-	- OpenJDK 11
 
 JMeter 5.4は.jmxファイルを読めないバグがあるので対応しません。
 5.3または5.4.1以降を使ってください。
@@ -32,7 +32,7 @@ JMeterは[公式サイト](https://jmeter.apache.org/download_jmeter.cgi)のも�
 Chocolatey/Homebrew/apt/dnfなどでインストールされるものは、古かったり問題がある場合があります。
 
 JMeterのGUIを終了し、install.shを(必要に応じて管理者権限で)実行してください。
-$JMETER_HOME/lib/ext/*.jarを書き換えるので注意してください。
+$JMETER_HOME/lib/ext/\*.jarを書き換えるので注意してください。
 
 JMeterの実行時にはJMETER_HOMEおよびJAVA_HOMEの設定は必要ありません。
 
