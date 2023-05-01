@@ -7,17 +7,18 @@ Apache JMeterのGUIを日本語化します。
 
 ## プラットフォーム
 
-- Apache JMeter 5.4.1
+- Apache JMeter 5.5
 - Windows
-	- Windows 10 Home x64 21H1 日本語版
-	- Cygwin 3.2
+	- Windows 11 Home x64 22H2
+	- Cygwin 3.4.6
 	- Oracle JRE 8
-	- Microsoft OpenJDK 11
-	- AdoptOpenJDK 8
 - macOS
-	- macOS Big Sur 11.4
+	- macOS Ventura 13.3
 	- Oracle JRE 8
-	- AdoptOpenJDK 8
+- chromeOS
+	- chromeOS 112
+	- Debian 11 bullseye
+	- OpenJDK 17
 
 JMeter 5.4は.jmxファイルを読めないバグがあるので対応しません。
 5.3または5.4.1以降を使ってください。
