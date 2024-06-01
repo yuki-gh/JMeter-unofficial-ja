@@ -9,5 +9,8 @@ install:
 extract:
 	bash extract.sh
 
+check:
+	bash check_en_ja.sh
+
 clean:
-	rm -rf org
+	rm -rf org en.orig
