@@ -2,7 +2,7 @@
 
 # set env
 
-JMETER_VER=5.4.1
+JMETER_VER=5.6.3
 
 case "$OSTYPE" in
 cygwin)
